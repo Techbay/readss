@@ -1,0 +1,7 @@
+web:
+  image: ian027/web
+  environment:
+    RAILS_ENV: development
+  ports:
+  - "80"
+  - "3000:3000"
