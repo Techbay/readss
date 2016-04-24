@@ -1,4 +1,8 @@
+# which image to use
 FROM ruby:2.3.0
+
+MAINTAINER ian027
+
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 # for postgres
 RUN apt-get install -y libpq-dev
