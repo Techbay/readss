@@ -20,6 +20,5 @@ WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
 RUN bundle install
-RUN RAILS_ENV=production rake db:migrate
 
 ADD . $APP_HOME
