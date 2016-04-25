@@ -9,7 +9,7 @@ services:
   web:
     container_name: web
     build: .
-    command: bin/rails server --port 3000 --binding 0.0.0.0
+    command: RAILS_ENV=$RUNNING_ENV bin/rails server --port 3000 --binding 0.0.0.0
     ports:
       - "3000:3000"
     links:
