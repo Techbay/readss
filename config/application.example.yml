@@ -1,0 +1,31 @@
+common: &common
+  G_API_KEY: ''
+  G_CLIENT_ID: ''
+  G_SECRET: ''
+
+development:
+  <<: *common
+  DATABASE: 'readss'
+  DATABASE_HOST: 'localhost'
+  DATABASE_USERNAME: ''
+  DATABASE_PASSWORD: ''
+  HOST: 'http://localhost:3000'
+
+test:
+  <<: *common
+  DATABASE: 'readss'
+  DATABASE_HOST: 'localhost'
+  DATABASE_USERNAME: 'techbay'
+  DATABASE_PASSWORD: 'techb@y'
+  SECRET_KEY_BASE: 01a4a2a4c267547f59cfbd0f6a308e2b04b7f1b999c2522e0d89cb39ccaf27bd5c52d6a33d65e11bcb4668f30dfb5fec340df4642316d514ab999d5649510ff3
+  HOST: 'http://localhost:3000'
+
+production:
+  <<: *common
+  DATABASE: 'readss'
+  DATABASE_HOST: '127.0.0.1'
+  DATABASE_PORT: '5432'
+  DATABASE_USERNAME: 'db_deploy'
+  DATABASE_PASSWORD: ''
+  SECRET_KEY_BASE: 01a4a2a4c267547f59cfbd0f6a308e2b04b7f1b999c2522e0d89cb39ccaf27bd5c52d6a33d65e11bcb4668f30dfb5fec340df4642316d514ab999d5649510ff3
+  HOST: 'readss.techbay.club'
