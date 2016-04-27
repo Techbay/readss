@@ -3,12 +3,17 @@ module Youtube
     def initialize
     end
 
-    def videos
+    def self.videos
       videos = Yt::Collections::Videos.new
-      puts videos.where(order: 'viewCount').first.title
-      puts videos.where(q: 'Fullscreen CreatorPlatform', safe_search: 'none').size
+      videos.where(order: 'viewCount').first(5)
+      # puts videos.where(q: 'Fullscreen CreatorPlatform', safe_search: 'none').size
       # videos.where(chart: 'mostPopular', video_category_id: 44).first.title
       # videos.where(id: 'MESycYJytkU,invalid').map(&:title)
+    end
+
+    def self.playlist
+      playlist = Yt::Playlist.new id:  'PLHb9DprH7bWATmIhJuNKUJLIIDU8FTlHG'
+      # playlist.playlist_items
     end
 
     private
