@@ -27,6 +27,7 @@ gem 'slim'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'pg'
 gem 'yt', '~> 0.25.5'
+gem 'annotate'
 
 group :development, :test do
   gem 'byebug'
