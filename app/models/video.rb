@@ -1,6 +1,6 @@
-class Entry < ApplicationRecord
+class Video < ApplicationRecord
 
-  def self.fetch_entries
+  def self.fetch_videos
     items = Youtube::Base.playlist_items
     items.each do |i|
     end
