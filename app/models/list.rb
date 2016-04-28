@@ -10,4 +10,5 @@
 #
 
 class List < ApplicationRecord
+  validates :name, :rid, presence: true, uniqueness: true
 end
