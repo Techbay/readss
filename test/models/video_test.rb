@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class VideoTest < ActiveSupport::TestCase
+
   setup do
     StubVideos = Struct.new(:title, :summary, :duration)
     @playlist = [
