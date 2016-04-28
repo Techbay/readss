@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428020802) do
+ActiveRecord::Schema.define(version: 20160428121500) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +19,22 @@ ActiveRecord::Schema.define(version: 20160428020802) do
   create_table "videos", force: :cascade do |t|
     t.string   "title"
     t.text     "summary"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.date     "published_at"
+    t.string   "thumbnail_url"
+    t.string   "channel_id"
+    t.string   "channel_title"
+    t.integer  "category_id"
+    t.string   "category_title"
+    t.integer  "view_count"
+    t.integer  "like_count"
+    t.integer  "dislike_count"
+    t.integer  "favorite_count"
+    t.integer  "comment_count"
+    t.integer  "duration"
+    t.boolean  "is_hd"
+    t.string   "embed_html"
   end
 
 end
