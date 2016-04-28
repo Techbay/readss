@@ -1,48 +1,48 @@
 require 'test_helper'
 
-class EntriesControllerTest < ActionDispatch::IntegrationTest
+class VideosControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @entry = entries(:one)
+    @video = videos(:one)
   end
 
   test "should get index" do
-    get entries_url
+    get videos_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_entry_url
+    get new_video_url
     assert_response :success
   end
 
-  test "should create entry" do
-    assert_difference('Entry.count') do
-      post entries_url, params: { entry: { summary: @entry.summary, title: @entry.title } }
+  test "should create video" do
+    assert_difference('Video.count') do
+      post videos_url, params: { video: { summary: @video.summary, title: @video.title } }
     end
 
-    assert_redirected_to entry_path(Entry.last)
+    assert_redirected_to video_path(Video.last)
   end
 
-  test "should show entry" do
-    get entry_url(@entry)
+  test "should show video" do
+    get video_url(@video)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_entry_url(@entry)
+    get edit_video_url(@video)
     assert_response :success
   end
 
-  test "should update entry" do
-    patch entry_url(@entry), params: { entry: { summary: @entry.summary, title: @entry.title } }
-    assert_redirected_to entry_path(@entry)
+  test "should update video" do
+    patch video_url(@video), params: { video: { summary: @video.summary, title: @video.title } }
+    assert_redirected_to video_path(@video)
   end
 
-  test "should destroy entry" do
-    assert_difference('Entry.count', -1) do
-      delete entry_url(@entry)
+  test "should destroy video" do
+    assert_difference('Video.count', -1) do
+      delete video_url(@video)
     end
 
-    assert_redirected_to entries_path
+    assert_redirected_to videos_path
   end
 end
