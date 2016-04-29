@@ -1,12 +1,14 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<h1 class="text-center">Videos</h1>
 
-<h1>Videos</h1>
-
-<table>
+<table class="table stripped-table">
   <thead>
     <tr>
+      <th>Video Type</th>
       <th>Title</th>
       <th>Summary</th>
+      <th>Video ID</th>
       <th>Published At</th>
       <th>Thumbnail Url</th>
       <th>Channel ID</th>
@@ -19,7 +21,7 @@
       <th>Favorite Count</th>
       <th>Comment Count</th>
       <th>Duration</th>
-      <th>Is HD</th>
+      <th>HD</th>
       <th>Embed HTML</th>
       <th colspan="3"></th>
     </tr>
@@ -28,8 +30,10 @@
   <tbody>
     <% @videos.each do |video| %>
       <tr>
+        <td><%= video.video_type %></td>
         <td><%= video.title %></td>
         <td><%= video.summary %></td>
+        <td><%= video.video_id %></td>
         <td><%= video.published_at %></td>
         <td><%= video.thumbnail_url %></td>
         <td><%= video.channel_id %></td>
@@ -51,6 +55,7 @@
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 

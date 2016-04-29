@@ -28,6 +28,7 @@ gem 'pg'
 gem 'yt', '~> 0.25.5'
 gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
