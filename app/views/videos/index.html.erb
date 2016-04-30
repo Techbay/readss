@@ -8,22 +8,9 @@
       <th>Video Type</th>
       <th>Title</th>
       <th>Summary</th>
-      <th>Video ID</th>
       <th>Published At</th>
       <th>Thumbnail Url</th>
-      <th>Channel ID</th>
-      <th>Channel Title</th>
-      <th>Category ID</th>
-      <th>Category Title</th>
-      <th>View Count</th>
-      <th>Like Count</th>
-      <th>Dislike Count</th>
-      <th>Favorite Count</th>
-      <th>Comment Count</th>
-      <th>Duration</th>
-      <th>HD</th>
       <th>Embed HTML</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -33,24 +20,9 @@
         <td><%= video.video_type %></td>
         <td><%= video.title %></td>
         <td><%= video.summary %></td>
-        <td><%= video.video_id %></td>
         <td><%= video.published_at %></td>
-        <td><%= video.thumbnail_url %></td>
-        <td><%= video.channel_id %></td>
-        <td><%= video.channel_title %></td>
-        <td><%= video.category_id %></td>
-        <td><%= video.category_title %></td>
-        <td><%= video.view_count %></td>
-        <td><%= video.like_count %></td>
-        <td><%= video.dislike_count %></td>
-        <td><%= video.favorite_count %></td>
-        <td><%= video.comment_count %></td>
-        <td><%= video.duration %></td>
-        <td><%= video.is_hd %></td>
-        <td><%= video.embed_html %></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= image_tag(video.thumbnail_url) %></td>
+        <td><%=raw video.embed_html %></td>
       </tr>
     <% end %>
   </tbody>
