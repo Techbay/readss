@@ -1,34 +1,12 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
-<h1 class="text-center">Videos</h1>
+  <h1 class="text-center">Videos</h1>
 
-<table class="table stripped-table">
-  <thead>
-    <tr>
-      <th>Video Type</th>
-      <th>Title</th>
-      <th>Summary</th>
-      <th>Published At</th>
-      <th>Thumbnail Url</th>
-      <th>Embed HTML</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @videos.each do |video| %>
-      <tr>
-        <td><%= video.video_type %></td>
-        <td><%= video.title %></td>
-        <td><%= video.summary %></td>
-        <td><%= video.published_at %></td>
-        <td><%= image_tag(video.thumbnail_url) %></td>
-        <td><%=raw video.embed_html %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @videos.each do |video| %>
+    <h3><%= video.title %></h3>
+    <p><%= video.summary %></p>
+    <div class="embed-responsive embed-responsive-16by9">
+      <%= raw video.embed_html %>
+    </div>
+  <% end %>
 </div>
-
-<br>
-
-<%= link_to 'New Video', new_video_path %>
