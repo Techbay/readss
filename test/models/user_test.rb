@@ -4,15 +4,21 @@ class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  setup do
+    @new_user = User.new(email: "abc@domain.net", password: "12345677")
+  end
  
   module InstanceMethodTest
    
-    def user_creation
-      #assert(users(:test_user).reward == 0, failure_message="default reward is not zero")
+    def test_user_creation
+      assert_difference 'User.count', 1 do
+        @new_user.save
+      end
+      
       assert_equal(0, users(:test_user).reward)
     end
   
-    def user_update_reward
+    def test_user_update_reward
       #add points
       change = 10
       result = users(:test_user).reward + 10
@@ -34,6 +40,7 @@ class UserTest < ActiveSupport::TestCase
   
   module ClassMethodTest
   end
-  
-  
+ 
+  include ClassMethodTest
+  include InstanceMethodTest 
 end
