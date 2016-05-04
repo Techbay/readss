@@ -30,6 +30,9 @@ gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
 gem 'devise'
 
+# use redcarpet for md to html conversion
+gem 'redcarpet'
+
 group :development, :test do
   gem 'byebug'
 end

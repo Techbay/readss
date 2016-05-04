@@ -41,6 +41,13 @@ class Video < ApplicationRecord
     end
   end
 
+  # Instance methods
+  def md_to_html(text)
+    options = {} 
+    renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(options))
+    renderer.render(text)
+  end
+  
   private
   def self.fetch_item(items, num)
     index = 0
@@ -51,4 +58,9 @@ class Video < ApplicationRecord
       index += 1
     end
   end
+  
+     
+    
+  
+  
 end

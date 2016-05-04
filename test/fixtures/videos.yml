@@ -18,3 +18,7 @@ one:
 two:
   title: MyString
   summary: 
+
+test_redcarpet:
+  title: markdown test
+  summary: 

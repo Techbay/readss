@@ -151,6 +151,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    redcarpet (3.3.4)
     responders (2.1.2)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.22)
@@ -221,6 +222,7 @@ DEPENDENCIES
   pg
   puma
   rails (>= 5.0.0.beta3, < 5.1)
+  redcarpet
   sass-rails (~> 5.0)
   slim
   spring
@@ -231,5 +233,8 @@ DEPENDENCIES
   web-console (~> 3.0)
   yt (~> 0.25.5)
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.0
