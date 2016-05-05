@@ -19,6 +19,6 @@ two:
   title: MyString
   summary: 
 
-test_redcarpet:
+test_md2html:
   title: markdown test
   summary: 

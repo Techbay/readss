@@ -42,7 +42,7 @@ class Video < ApplicationRecord
   end
 
   # Instance methods
-  def md_to_html(text)
+  def md_to_html(text=self.summary)
     options = {} 
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(options))
     renderer.render(text)
