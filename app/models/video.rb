@@ -10,6 +10,13 @@
 #
 
 class Video < ApplicationRecord
+  def initialize(video_params = nil)
+    super(video_params)
+    if self.summary
+      self.summary = self.md_to_html(self.summary)
+    end
+  end
+
 
   def self.fetching_videos
     items = Youtube::Base.playlist_items
@@ -42,6 +49,7 @@ class Video < ApplicationRecord
   end
 
   # Instance methods
+  # output: html rendered from input
   def md_to_html(text=self.summary)
     options = {} 
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(options))
