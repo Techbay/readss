@@ -48,8 +48,17 @@ class Video < ApplicationRecord
     end
   end
 
+  def md_to_html!(field=nil)
+    raise "please tell me which field (a symbol) to convert to html" unless field.is_a?(Symbol)
+    raise "this field is not a string" unless self[field].is_a?(String)
+    self[field] = self.md_to_html(self[field])
+    self.save
+  end
+  
+  
   # Instance methods
   # output: html rendered from input
+  # If the input is already html, it seems that it's smart enough to keep it as is.
   def md_to_html(text=self.summary)
     options = {} 
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(options))

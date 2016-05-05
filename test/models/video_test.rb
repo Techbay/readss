@@ -55,6 +55,24 @@ content starts at 4-columns in.
       assert_equal(output, videos(:test_md2html).md_to_html(input))
     end
   end
+  
+  def test_md_to_html!
+    # test no field
+    # test wrong field
+    assert_raise do
+      videos(:test_md2html).md_to_html!
+      videos(:test_md2html).comment_count = 5
+      videos(:test_md2html).md_to_html!(:comment_count)
+      videos(:test_md2html).summary = "* abc"
+      videos(:test_md2html).md_to_html!("summary")
+    end
+    
+    # test conversion
+    videos(:test_md2html).summary = "* abc"
+    videos(:test_md2html).md_to_html!(:summary) 
+    assert_equal("<ul>\n<li>abc</li>\n</ul>\n", videos(:test_md2html).summary)
+    
+  end
 
   include ClassMethodTest
   include InstanceMethodTest
