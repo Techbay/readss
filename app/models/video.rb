@@ -10,14 +10,16 @@
 #
 
 class Video < ApplicationRecord
-  def initialize(video_params = nil)
-    super(video_params)
-    if self.summary
-      self.summary = self.md_to_html(self.summary)
+  # this is done before save or update
+  before_save do
+    if self.summary_md_changed?
+      puts "convert md to html"
+      self.md_to_html!(:summary_md, :summary)
     end
   end
-
-
+  
+  
+  
   def self.fetching_videos
     items = Youtube::Base.playlist_items
     items.each do |i|
@@ -48,11 +50,12 @@ class Video < ApplicationRecord
     end
   end
 
-  def md_to_html!(field=nil)
-    raise "please tell me which field (a symbol) to convert to html" unless field.is_a?(Symbol)
-    raise "this field is not a string" unless self[field].is_a?(String)
-    self[field] = self.md_to_html(self[field])
-    self.save
+  def md_to_html!(from=nil, to=nil) 
+    raise "please tell me which field (a symbol) to convert to html" unless from.is_a?(Symbol)
+    raise "please tell me which field (a symbol) to save the converted" unless to.is_a?(Symbol)
+    raise "this field is not a string" unless self[from].is_a?(String)
+    self[to] = self.md_to_html(self[from])
+    #self.save
   end
   
   
