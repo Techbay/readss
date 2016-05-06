@@ -17,6 +17,8 @@ class ListTest < ActiveSupport::TestCase
   end
 
   module ClassMethodTest
+    def test_fetching_videos
+    end
   end
 
   module InstanceMethodTest

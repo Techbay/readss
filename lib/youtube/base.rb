@@ -11,7 +11,7 @@ module Youtube
       # videos.where(id: 'MESycYJytkU,invalid').map(&:title)
     end
 
-    def self.playlist_items
+    def self.playlist_items(list_id)
       playlist = Yt::Playlist.new id:  'PLHb9DprH7bWATmIhJuNKUJLIIDU8FTlHG'
       playlist.playlist_items
     end
