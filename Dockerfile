@@ -1,5 +1,5 @@
 # which image to use
-FROM ruby:2.3.0
+FROM rails:latest
 
 MAINTAINER ian027
 
