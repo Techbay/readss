@@ -72,9 +72,12 @@ OUTPUT
     videos(:test_md2html).md_to_html!(:summary_md, :summary) 
     assert_equal("<ul>\n<li>abc</li>\n</ul>\n", videos(:test_md2html).summary)
     
-    # confirm that markdown conversion not performed if summary_md not changed
-    # not done with this part
-    videos(:test_md2html).update(:title => "a new title")
+    # confirm that markdown conversion performed if summary_md is changed
+    videos(:test_md2html).expects("md_to_html!")
+    videos(:test_md2html).update(:summary_md => "* cc")
+    # confirm that markdown conversion not performed if summary_md is not changed
+    videos(:test_md2html).expects("md_to_html!").never
+    videos(:test_md2html).update(:title => "new title")
     
   end
 

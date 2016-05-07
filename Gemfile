@@ -35,6 +35,7 @@ gem 'redcarpet'
 
 group :development, :test do
   gem 'byebug'
+  gem 'mocha'
 end
 
 group :development do

@@ -55,6 +55,7 @@ class Video < ApplicationRecord
     raise "please tell me which field (a symbol) to save the converted" unless to.is_a?(Symbol)
     raise "this field is not a string" unless self[from].is_a?(String)
     self[to] = self.md_to_html(self[from])
+    return nil
     #self.save
   end
   
