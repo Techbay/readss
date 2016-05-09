@@ -10,6 +10,15 @@ module Admin
 
     def authenticate_admin
       # TODO Add authentication logic here.
+      # authenticate_user!
+      if User.find(current_user).isadmin
+        # should be admin
+        flash[:success] = "you are admin"
+      else
+        # not admin
+        flash[:error] = "you are not admin"
+        redirect_to root_path
+      end
     end
 
     # Override this value to specify the number of elements to display at a time
