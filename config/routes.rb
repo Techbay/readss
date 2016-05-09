@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+resources :lists
+resources :videos
+
+    root to: "users#index"
+  end
+
   devise_for :users
   resources :videos
   root to: 'home#index'
