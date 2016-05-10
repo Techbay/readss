@@ -12,6 +12,7 @@
 class List < ApplicationRecord
   validates :name, :rid, presence: true, uniqueness: true
 
-  def self.fetching_videos
+  def fetching_videos
+    Video.fetching_videos(rid)
   end
 end

@@ -17,11 +17,9 @@ class Video < ApplicationRecord
       self.md_to_html!(:summary_md, :summary)
     end
   end
-  
-  
-  
-  def self.fetching_videos
-    items = Youtube::Base.playlist_items
+
+  def self.fetching_videos(list_id)
+    items = Youtube::Base.playlist_items(list_id)
     items.each do |i|
       video = i.video
       begin
@@ -50,7 +48,7 @@ class Video < ApplicationRecord
     end
   end
 
-  def md_to_html!(from=nil, to=nil) 
+  def md_to_html!(from=nil, to=nil)
     raise "please tell me which field (a symbol) to convert to html" unless from.is_a?(Symbol)
     raise "please tell me which field (a symbol) to save the converted" unless to.is_a?(Symbol)
     raise "this field is not a string" unless self[from].is_a?(String)
@@ -58,17 +56,17 @@ class Video < ApplicationRecord
     return nil
     #self.save
   end
-  
-  
+
+
   # Instance methods
   # output: html rendered from input
   # If the input is already html, it seems that it's smart enough to keep it as is.
   def md_to_html(text=self.summary)
-    options = {} 
+    options = {}
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(options))
     renderer.render(text)
   end
-  
+
   private
   def self.fetch_item(items, num)
     index = 0
@@ -79,9 +77,4 @@ class Video < ApplicationRecord
       index += 1
     end
   end
-  
-     
-    
-  
-  
 end

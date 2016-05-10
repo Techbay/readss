@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: <%= "#{ENV['DATABASE']}" %>
+  database: <%= ENV['DATABASE'] %>
   host: <%= ENV['DATABASE_HOST'] %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
 
 test: &test
   <<: *default
-  database: <%= "#{ENV['DATABASE']}" %>
+  database: <%= ENV['DATABASE'] %>
   host: <%= ENV['DATABASE_HOST'] %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>

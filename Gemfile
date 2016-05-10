@@ -20,7 +20,6 @@ gem 'jbuilder', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'figaro'
 gem 'feedjira'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -32,6 +31,7 @@ gem 'devise'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'
+gem 'figaro'
 
 # use administrate for as admin dashboard
 #gem "administrate", "> 0.2.0"
