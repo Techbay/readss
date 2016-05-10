@@ -52,8 +52,9 @@ group :development do
 end
 
 group :development, :production do
-  gem 'capistrano', '~> 3.3.5'
+  gem 'capistrano', '~> 3.5'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
