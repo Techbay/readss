@@ -70,6 +70,7 @@ GEM
       thor (~> 0.19)
     builder (3.2.2)
     byebug (8.2.4)
+    chronic (0.10.2)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -81,6 +82,11 @@ GEM
     datetime_picker_rails (0.0.7)
       momentjs-rails (>= 2.8.1)
     debug_inspector (0.0.2)
+    delayed_job (4.1.1)
+      activesupport (>= 3.0, < 5.0)
+    delayed_job_active_record (4.1.0)
+      activerecord (>= 3.0, < 5)
+      delayed_job (>= 3.0, < 5)
     devise (4.0.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -237,6 +243,8 @@ GEM
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    whenever (0.9.4)
+      chronic (>= 0.6.3)
     yt (0.25.34)
       activesupport
 
@@ -249,6 +257,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.1.0)
+  delayed_job_active_record
   devise
   feedjira
   figaro
@@ -268,6 +277,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   vimeo (~> 1.5, >= 1.5.4)
   web-console (~> 3.0)
+  whenever
   yt (~> 0.25.5)
 
 RUBY VERSION

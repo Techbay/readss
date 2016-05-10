@@ -28,10 +28,12 @@ gem 'yt', '~> 0.25.5'
 gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
 gem 'devise'
+gem 'delayed_job_active_record'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'
 gem 'figaro'
+gem 'whenever'
 
 # use administrate for as admin dashboard
 #gem "administrate", "> 0.2.0"
