@@ -39,10 +39,14 @@ set :puma_nginx, :web
 
 
 # for puma
-set :puma_init_active_record, false
-set :puma_bind, "unix://tmp/sockets/puma.sock"
+set :puma_init_active_record, true
 set :puma_role, :web
 set :puma_conf, "#{shared_path}/config/puma.rb"
+set :puma_bind, "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
+set :puma_state, "#{shared_path}/tmp/pids/puma.state"
+set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
+set :puma_access_log, "#{release_path}/log/puma.error.log"
+set :puma_error_log,  "#{release_path}/log/puma.access.log"
 
 # for assets
 set :keep_assets, 2
@@ -58,6 +62,9 @@ namespace :deploy do
     on roles(:all), in: :sequence, wait: 5 do
       unless test "[ -d #{shared_path}/config ]"
         execute "mkdir -p #{shared_path}/config"
+        execute "mkdir #{shared_path}/tmp/sockets -p"
+        execute "mkdir #{shared_path}/tmp/pids -p"
+
         upload!("config/application.example.yml", "#{shared_path}/config/application.yml")
         puts "Now edit the config files in #{shared_path}"
       end
