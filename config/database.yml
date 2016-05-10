@@ -19,6 +19,7 @@ test: &test
 
 production:
   <<: *default
-  database: 'readss-pro'
-  host: postgres-cdfe9145-1
-  username: postgres
+  database: <%= ENV['DATABASE'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
