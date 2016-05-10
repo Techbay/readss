@@ -4,7 +4,6 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-# deploy_domain = "feedmob.com"
 role :web, %w{deploy@52.23.254.213}
 role :db, %w{deploy@52.23.254.213}
 
