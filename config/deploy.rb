@@ -40,7 +40,7 @@ set :puma_nginx, :web
 
 # for puma
 set :puma_init_active_record, false
-set :puma_bind, %w(tcp://0.0.0.0:9292 unix:///tmp/puma.sock)
+set :puma_bind, "unix://tmp/sockets/puma.sock"
 set :puma_role, :web
 set :puma_conf, "#{shared_path}/config/puma.rb"
 
