@@ -29,6 +29,7 @@ gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
 gem 'devise'
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'

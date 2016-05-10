@@ -115,7 +115,7 @@ namespace :deploy do
       end
     end
   end
-  after :publishing, :start_or_restart
+  after :publishing, :"puma:start"
   after :publishing, :restart_fetching_videos_job
   after :finishing, :cleanup
 end
