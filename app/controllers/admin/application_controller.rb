@@ -11,7 +11,7 @@ module Admin
     def authenticate_admin
       # TODO Add authentication logic here.
       # authenticate_user!
-      if User.find(current_user).isadmin
+      if current_user && User.find(current_user).isadmin
         # should be admin
         flash[:success] = "you are admin"
       else
