@@ -29,6 +29,7 @@ class UserDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     reward: Field::Number,
+    isadmin: Field::Boolean,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -67,6 +68,7 @@ class UserDashboard < Administrate::BaseDashboard
     :created_at,
     :updated_at,
     :reward,
+    :isadmin,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -91,12 +93,18 @@ class UserDashboard < Administrate::BaseDashboard
     :unlock_token,
     :locked_at,
     :reward,
+    :isadmin,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(user)
-  #   "User ##{user.id}"
-  # end
+  def display_resource(user)
+    if user.isadmin
+      admin_flag = "admin user"
+    else
+      admin_flag = "normal user"
+    end
+    "User ##{user.id}" +" " + admin_flag
+  end
 end
