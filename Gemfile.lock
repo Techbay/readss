@@ -106,6 +106,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
+    daemons (1.2.3)
     datetime_picker_rails (0.0.7)
       momentjs-rails (>= 2.8.1)
     debug_inspector (0.0.2)
@@ -295,6 +296,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano3-puma!
   coffee-rails (~> 4.1.0)
+  daemons
   delayed_job_active_record
   devise
   feedjira
