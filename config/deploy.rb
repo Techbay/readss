@@ -115,8 +115,7 @@ namespace :deploy do
       end
     end
   end
-  after :publishing, :restart_delayed_job_for_images 
-
   after :publishing, :start_or_restart
+  after :publishing, :restart_fetching_videos_job
   after :finishing, :cleanup
 end
