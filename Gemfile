@@ -29,6 +29,7 @@ gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
 gem 'devise'
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'
@@ -49,4 +50,12 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :development, :production do
+  gem 'capistrano', '~> 3.5'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
