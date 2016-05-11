@@ -65,6 +65,7 @@ namespace :deploy do
         execute "mkdir #{shared_path}/tmp/sockets -p"
         execute "mkdir #{shared_path}/tmp/pids -p"
 
+        # upload example file to shared path
         upload!("config/application.example.yml", "#{shared_path}/config/application.yml")
         puts "Now edit the config files in #{shared_path}"
       end
