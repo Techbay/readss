@@ -90,14 +90,6 @@ namespace :deploy do
     end
   end
 
-  desc "Restart Application"
-  task :restart do
-    on roles(:web), in: :sequence, wait: 10 do
-      execute :bundle, "exec puma:restart"
-      # execute "kill -USR2 `cat #{shared_path}/tmp/pids/puma.pid`"
-    end
-  end
-
   desc "Start or Restart Application"
   task :start_or_restart do
     on roles(:web), in: :sequence, wait: 10 do
@@ -122,7 +114,19 @@ namespace :deploy do
       end
     end
   end
-  after :publishing, :"puma:start"
+
+  desc "Restart Application"
+  task :restart do
+    on roles(:web), in: :sequence, wait: 10 do
+      #execute :bundle, "exec puma:restart"
+      # execute "kill -USR2 `cat #{shared_path}/tmp/pids/puma.pid`"
+      execute "rm -rf tmp/cache"
+    end
+  end
+  after :restart, :'puma:restart'    #添加此项重启puma
+  after :publishing, :restart
+
+  #after :publishing, :"puma:start"
   after :publishing, :restart_fetching_videos_job
   after :finishing, :cleanup
 end
