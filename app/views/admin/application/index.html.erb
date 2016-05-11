@@ -42,8 +42,12 @@ It renders the `_table` partial to display details about the resources.
       Press enter to search
     </span>
   </form>
+
 <% end %>
 
+<%# define logout button for use in other views
+%>
+<% content_for(:logout) do %>
 <div class="header__actions">
     <%= link_to(
       "Log out",
@@ -52,6 +56,8 @@ It renders the `_table` partial to display details about the resources.
       class: "button",
     ) %>
 </div>
+<% end %>
+
 
 
 <header class="header">
