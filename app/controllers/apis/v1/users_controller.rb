@@ -3,22 +3,20 @@ module Apis::V1
     include ::Authenticates
 
     protect_from_forgery with: :null_session
-    before_action :authenticate_zone, only: [:add_reward, :subtract_reward]
+    before_action :authenticate, only: [:add_reward, :subtract_reward]
 
     def add_reward
-      return "vc_noreward" unless authenticate
-
       ApiRequest.create(address: request.fullpath, from: request.env["HTTP_REFERER"])
       if User.first.add_reward(user_rewards)
-        render text: "vc_success"
+        render plain: "vc_success"
       else
-        render text: "vc_noreward"
+        render plain: "vc_noreward"
       end
     end
 
     def subtract_reward
       User.first.subtract_reward(user_rewards)
-      render text: "vc_success"
+      render plain: "vc_success"
     end
 
     private
@@ -27,7 +25,7 @@ module Apis::V1
     end
 
     def authenticate
-      authenticate_zone(
+      unless authenticate_zone(
         secret: ENV["ZONE_SECRET"],
         trans_id: params[:id],
         dev_id: params[:uid],
@@ -39,6 +37,8 @@ module Apis::V1
         mac_sha1: params[:mac_sha1],
         result: params[:verifier]
       )
+        render plain: "vc_noreward" and return
+      end
     end
   end
 end
