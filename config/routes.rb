@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   namespace :apis do
     namespace :v1 do
-      post 'add_reward', to: 'users#add_reward'
+      get 'add_reward', to: 'users#add_reward'
     end
   end
 
