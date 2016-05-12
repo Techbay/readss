@@ -7,7 +7,7 @@
 
 <p id="summary">
   <strong>Summary:</strong>
-  <%= @video.summary.html_safe %>
+  <%= raw @video.summary %>
 </p>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
