@@ -13,5 +13,12 @@ module Apis::V1
       end
       assert_response :success
     end
+
+    test "should add api request" do
+      assert_difference 'ApiRequest.count', 1 do
+        post apis_v1_add_reward_path(reward: 100)
+      end
+      assert_response :success
+    end
   end
 end
