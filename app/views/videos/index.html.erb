@@ -8,6 +8,11 @@
       <%= link_to "兑换", "#",  class: "video", data: {video_id: video.id} %>
     </h3>
     <p><%= video.summary %></p>
+    <div>
+      <span>views: <%= video.view_count %></span>
+      <span>likes: <%= video.like_count %></span>
+      <span>favorite: <%= video.favorite_count %></span>
+    </div>
     <div class="embed-responsive embed-responsive-16by9">
       <%= raw video.embed_html %>
     </div>
