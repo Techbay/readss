@@ -2,11 +2,28 @@
 #
 # Table name: videos
 #
-#  id         :integer          not null, primary key
-#  title      :string
-#  summary    :text
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id             :integer          not null, primary key
+#  title          :string
+#  summary        :text
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  published_at   :date
+#  thumbnail_url  :string
+#  channel_id     :string
+#  channel_title  :string
+#  category_id    :integer
+#  category_title :string
+#  view_count     :integer
+#  like_count     :integer
+#  dislike_count  :integer
+#  favorite_count :integer
+#  comment_count  :integer
+#  duration       :integer
+#  is_hd          :boolean
+#  embed_html     :string
+#  video_id       :string
+#  video_type     :string
+#  summary_md     :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

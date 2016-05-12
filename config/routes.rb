@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :users
     resources :lists
     resources :videos
+    resources :api_requests
 
     root to: "users#index"
   end
