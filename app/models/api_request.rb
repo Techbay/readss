@@ -10,4 +10,5 @@
 #
 
 class ApiRequest < ApplicationRecord
+  default_scope { order(id: :desc) }
 end
