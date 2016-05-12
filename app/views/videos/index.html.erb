@@ -3,7 +3,10 @@
   <h1 class="text-center">Videos</h1>
 
   <% @videos.each do |video| %>
-    <h3><%= video.title %></h3>
+    <h3>
+      <%= video.title %>
+      <%= link_to "兑换", "#",  class: "video", data: {video_id: video.id} %>
+    </h3>
     <p><%= video.summary %></p>
     <div class="embed-responsive embed-responsive-16by9">
       <%= raw video.embed_html %>
