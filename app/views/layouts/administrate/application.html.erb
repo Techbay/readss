@@ -22,21 +22,14 @@ By default, it renders:
 </head>
 
 <body>
-
   <div class="app-container">
-
     <div class="sidebar">
       <%= render "sidebar" -%>
     </div>
 
     <main class="main-content" role="main">
       <%# direct rendering of layouts/header doesn't show buttons on the right %>
-      <%= render "layouts/header" %>
-      <div>The header is from layouts/_header.html.erb, but the logout button and useremail is missing. They are part of the html, though.</div>
       <%= content_for(:search) %>
-      <%= content_for(:logout) %>
-      <div>This logout button is generated separately in admin/application/index.html.erb</div>
-      <%= render "flashes" -%>
       <%= yield %>
     </main>
 

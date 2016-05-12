@@ -41,24 +41,14 @@ It renders the `_table` partial to display details about the resources.
     <span class="search__hint">
       Press enter to search
     </span>
-  </form>
-  
-<% end %>
-
-<%# define logout button for use in other views
-%>
-<% content_for(:logout) do %>
-<div class="header__actions">
     <%= link_to(
       "Log out",
-      destroy_user_session_path, 
-      method: :delete, 
+      destroy_user_session_path,
+      method: :delete,
       class: "button",
     ) %>
-</div>
+  </form>
 <% end %>
-
-
 
 <header class="header">
   <h1 class="header__heading" id="page-title"><%= content_for(:title) %></h1>
@@ -72,5 +62,4 @@ It renders the `_table` partial to display details about the resources.
 </header>
 
 <%= render "collection", collection_presenter: page, resources: resources %>
-
 <%= paginate resources %>
