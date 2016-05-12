@@ -7,6 +7,12 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
+  namespace :apis do
+    namespace :v1 do
+      post 'add_reward', to: 'users#add_reward'
+    end
+  end
+
   devise_for :users
   resources :videos
   root to: 'home#index'
