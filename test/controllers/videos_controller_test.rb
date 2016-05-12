@@ -3,8 +3,8 @@ require 'test_helper'
 class VideosControllerTest < ActionDispatch::IntegrationTest
   setup do
     @video = videos(:one)
-    post user_registration_path, params: { user: {email: "a@b", password: "111111"}}
-    follow_redirect!
+    user = {email: users(:test_user).email, password: "12345678"}
+    sign_in(user)
   end
   
 
