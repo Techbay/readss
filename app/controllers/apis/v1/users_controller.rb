@@ -11,7 +11,7 @@ module Apis::V1
 
     private
     def user_rewards
-      params.require(:users).permit(:reward)
+      params[:reward]
     end
 
   end
