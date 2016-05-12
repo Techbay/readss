@@ -4,13 +4,16 @@ module Apis::V1
 
     def add_reward
       ApiRequest.create(address: request.fullpath, from: request.env["HTTP_REFERER"])
-      User.first.add_reward(user_rewards)
-      render text: "success"
+      if User.first.add_reward(user_rewards)
+        render text: "vc_success"
+      else
+        render text: "vc_noreward"
+      end
     end
 
     def subtract_reward
       User.first.subtract_reward(user_rewards)
-      render text: "success"
+      render text: "vc_success"
     end
 
     private
