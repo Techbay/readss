@@ -3,7 +3,10 @@ require 'test_helper'
 class VideosControllerTest < ActionDispatch::IntegrationTest
   setup do
     @video = videos(:one)
+    post user_registration_path, params: { user: {email: "a@b", password: "111111"}}
+    follow_redirect!
   end
+  
 
   test "should get index" do
     get videos_url
