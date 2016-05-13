@@ -1,21 +1,11 @@
-callNativeApp = ->
+getUser = ->
+  $.get '/user_id', (data)-> console.log(data); setUser(data)
+
+setUser = (userId)->
   try
-    console.log("hello")
-    webkit.messageHandlers.callbackHandler.postMessage("Hello from JavaScript")
+    webkit.messageHandlers.callbackHandler.postMessage(userId)
   catch err
-    console.log(err)
     console.log('The native context does not exist yet')
 
-
-setTimeout(
-  -> callNativeApp()
-  5000
-)
-
-redHeader = ->
-  alert("hellow")
-
 $(document).ready ->
-  $(".video").on "click", ->
-    alert($(this).data("video-id"))
-    false
+  getUser()

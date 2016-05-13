@@ -7,7 +7,7 @@ module Apis::V1
 
     def add_reward
       ApiRequest.create(address: request.fullpath, from: request.env["HTTP_REFERER"])
-      if User.first.add_reward(user_rewards)
+      if user = User.find(params[:custom_id]) and user.add_reward(user_rewards)
         render plain: "vc_success"
       else
         render plain: "vc_noreward"
@@ -35,7 +35,8 @@ module Apis::V1
         udid: params[:udid],
         odin1: params[:odin1],
         mac_sha1: params[:mac_sha1],
-        result: params[:verifier]
+        result: params[:verifier],
+        custom_id: params[:custom_id]
       )
         render plain: "vc_noreward" and return
       end

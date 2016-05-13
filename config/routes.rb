@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+
   namespace :admin do
     resources :users
     resources :lists
@@ -14,9 +16,9 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :users
   resources :videos
-  root to: 'home#index'
+  root to: 'videos#index'
+  get 'user_id', to: 'application#user_id'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # Serve websocket cable requests in-process
