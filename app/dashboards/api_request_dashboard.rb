@@ -9,6 +9,7 @@ class ApiRequestDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    trans_id: Field::String,
     address: Field::String,
     from: Field::String,
     created_at: Field::DateTime
@@ -21,8 +22,8 @@ class ApiRequestDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
+    :trans_id,
     :address,
-    :from,
     :created_at
   ].freeze
 
@@ -30,6 +31,7 @@ class ApiRequestDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
+    :trans_id,
     :address,
     :from,
     :created_at

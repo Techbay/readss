@@ -13,5 +13,8 @@ module Readss
     # -- all .rb files in that directory are automatically loaded.
     config.autoload_paths << Rails.root.join('lib')
     config.active_job.queue_adapter = :delayed_job
+
+    # FIXME: need to remove when administrate fix parameters bug
+    config.action_controller.permit_all_parameters = true
   end
 end

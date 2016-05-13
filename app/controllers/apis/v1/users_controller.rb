@@ -6,7 +6,12 @@ module Apis::V1
     before_action :authenticate, only: [:add_reward, :subtract_reward]
 
     def add_reward
-      ApiRequest.create(address: request.fullpath, from: request.env["HTTP_REFERER"])
+      if ar = ApiRequest.find_by(trans_id: params[:id])
+        render plain: "vc_success" and return
+      else
+        ApiRequest.create(trans_id: params[:id], address: request.fullpath, from: request.env["HTTP_REFERER"])
+      end
+
       if user = User.find(params[:custom_id]) and user.add_reward(user_rewards)
         render plain: "vc_success"
       else
