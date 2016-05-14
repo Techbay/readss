@@ -27,6 +27,7 @@
 #
 
 class Video < ApplicationRecord
+  has_and_belongs_to_many :users
   # this is done before save or update
   before_save do
     if self.summary_md_changed?

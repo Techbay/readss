@@ -12,6 +12,12 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+    # add video to user
+    current_user.videos << @video 
+    # remove points
+    current_user.subtract_reward(1)
+    # go back
+    redirect_to root_path
   end
 
   # GET /videos/new
