@@ -45,7 +45,9 @@ It renders the `_table` partial to display details about the resources.
       "Log out",
       destroy_user_session_path,
       method: :delete,
+      display: "none",
       class: "button",
+      style: "z-index: 100"
     ) %>
   </form>
 <% end %>
