@@ -6,7 +6,6 @@ class VideosController < ApplicationController
   # GET /videos.json
   def index
     @videos = Video.all
-    logger.info session
   end
 
   # GET /videos/1
