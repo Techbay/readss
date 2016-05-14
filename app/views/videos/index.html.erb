@@ -3,8 +3,12 @@
   <% @videos.each do |video| %>
     <h3>
       <%= video.title %>
-      <%= link_to "兑换", "/videos/"+video.id.to_s,  class: "redeem-video", 
-      data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase} %>
+      <% if current_user.videos.include?(video) %>
+        <span style="color: blue"> You have purchased this video </span>
+      <% else %>
+        <%= link_to "兑换", "/videos/"+video.id.to_s,  class: "redeem-video", 
+        data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase} %>
+      <% end %>
     </h3>
     <p><%= video.summary %></p>
     <div>
@@ -12,8 +16,11 @@
       <span>likes: <%= video.like_count %></span>
       <span>favorite: <%= video.favorite_count %></span>
     </div>
-    <div class="embed-responsive embed-responsive-16by9">
-      <%#= raw video.embed_html %>
-      <%= image_tag(video.thumbnail_url||"administrate/search.svg", alt: "READSS") %>
+    <div class="embed-responsive embed-responsive-16by9" >
+      <% if current_user.videos.include?(video) %>
+        <%= raw video.embed_html %>
+      <% else %>
+        <%= image_tag(video.thumbnail_url||"administrate/search.svg", alt: "READSS") %>
+      <% end %>
     </div>
   <% end %>
