@@ -3,7 +3,8 @@
   <% @videos.each do |video| %>
     <h3>
       <%= video.title %>
-      <%= link_to "兑换", "/videos/"+video.id.to_s,  class: "redeem-video", data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title} %>
+      <%= link_to "兑换", "/videos/"+video.id.to_s,  class: "redeem-video", 
+      data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase} %>
     </h3>
     <p><%= video.summary %></p>
     <div>
@@ -13,6 +14,6 @@
     </div>
     <div class="embed-responsive embed-responsive-16by9">
       <%#= raw video.embed_html %>
-      <%= image_tag(video[:thumbnail_url]||"administrate/search.svg", alt: "READSS") %>
+      <%= image_tag(video.thumbnail_url||"administrate/search.svg", alt: "READSS") %>
     </div>
   <% end %>
