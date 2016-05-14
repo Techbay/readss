@@ -12,12 +12,19 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
-    # add video to user
-    current_user.videos << @video 
-    # remove points
-    current_user.subtract_reward(1)
-    # go back
+    if (current_user.has_reward?)
+      # add video to user
+      current_user.videos << @video 
+      # remove points
+      current_user.subtract_reward(1)
+      flash[:now] = "video " + @video.title.upcase + " is now available."
+    else
+      # not enough fund
+      flash[:now] = "not enough fund to watch any videos"
+    end
+    #go back
     redirect_to root_path
+      
   end
 
   # GET /videos/new

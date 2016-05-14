@@ -42,4 +42,8 @@ class User < ApplicationRecord
     self.reward = [0, self.reward - (change.to_i || 0)].max
     save!
   end
+  
+  def has_reward?
+    self.reward > 0
+  end
 end
