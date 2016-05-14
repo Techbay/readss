@@ -8,6 +8,7 @@ class VideoDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    users: Field::HasMany,
     id: Field::Number,
     title: Field::String,
     summary: Field::Text,
@@ -47,6 +48,7 @@ class VideoDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    :users,
     :id,
     :title,
     :summary,
@@ -75,6 +77,7 @@ class VideoDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :users,
     :title,
     :summary,
     :published_at,

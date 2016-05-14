@@ -1,4 +1,4 @@
-User.create(email: "test@techbay.com", password: "12345678", isadmin: true)
+User.create(email: "test@techbay.com", password: "12345678", reward: 10, isadmin: true)
 List.create(name: "programming", rid: "PLxsn9ryMcqFRaF8rXgwkwb6SMzBNWhCri")
 
 # Suppose we use youtube
