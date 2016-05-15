@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :videos
+  post 'video_redeem', to: 'videos#redeem'
   root to: 'videos#index'
   get 'user_id', to: 'application#user_id'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

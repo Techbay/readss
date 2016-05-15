@@ -5,8 +5,8 @@ module VideosHelper
         if current_user.videos.include?(video)
             content_tag :span, "You have purchased this video!", {style: "color: blue"}
         else
-            link_to "兑换", "/videos/"+video.id.to_s,  class: "redeem-video", 
-          data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase}
+            link_to "兑换", video_redeem_path(id: video.id),  class: "redeem-video", method: :post,  
+          data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase, turbolinks: true}
         end
       end
     end

@@ -5,7 +5,7 @@
       <%= video.title %>
       <%= video_redeem_status(video) %>
     </h3>
-    <p><%= video.summary %></p>
+    <p><%= raw video.summary %></p>
     <div>
       <span>views: <%= video.view_count %></span>
       <span>likes: <%= video.like_count %></span>

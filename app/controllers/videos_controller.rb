@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-  before_action :set_video, only: [:show, :edit, :update, :destroy]
+  before_action :set_video, only: [:show, :edit, :update, :destroy, :redeem]
   before_action :authenticate_user!, except: [:index]
 
   # GET /videos
@@ -11,6 +11,8 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+  end
+  def redeem
     if (current_user.has_reward?)
       # add video to user
       current_user.videos << @video 
