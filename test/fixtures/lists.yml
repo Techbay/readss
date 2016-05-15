@@ -15,8 +15,9 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
+test_list: 
+  name: "programming"
+  rid: "PLxsn9ryMcqFRaF8rXgwkwb6SMzBNWhCri"
 #
-two: {}
+#two: {}
 # column: value

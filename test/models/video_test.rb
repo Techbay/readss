@@ -45,6 +45,14 @@ class VideoTest < ActiveSupport::TestCase
         end
       end
     end
+    
+    def test_fetching_video_list
+      new_video_count = Youtube::Base.playlist_items(lists(:test_list).rid).count
+      assert_difference('Video.count', new_video_count) do
+        Video.fetching_videos(lists(:test_list).rid)
+      end
+  
+    end
   end
   
   module InstanceMethodTest
