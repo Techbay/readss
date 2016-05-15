@@ -6,7 +6,7 @@ class VideosControllerTest < ActionDispatch::IntegrationTest
     user = {email: users(:test_user).email, password: "12345678"}
     sign_in(user)
   end
-  
+
 
   test "should get index" do
     get videos_url
