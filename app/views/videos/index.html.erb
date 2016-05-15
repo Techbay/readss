@@ -19,10 +19,8 @@
       <span>favorite: <%= video.favorite_count %></span>
     </div>
     <div class="embed-responsive embed-responsive-16by9" >
-    <% if user_signed_in? %>
-        <% if current_user.videos.include?(video) %>
+    <% if user_signed_in? and current_user.videos.include?(video) %>
           <%= raw video.embed_html %>
-        <% end %>
      <% else %>
         <%= image_tag(video.thumbnail_url||"administrate/search.svg", alt: "READSS") %>
      <% end %>
