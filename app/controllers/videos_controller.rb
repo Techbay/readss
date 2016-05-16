@@ -12,20 +12,21 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
   end
+
   def redeem
     if (current_user.has_reward?)
       # add video to user
-      current_user.videos << @video 
+      current_user.videos << @video
       # remove points
       current_user.subtract_reward(1)
       flash[:now] = "video " + @video.title.upcase + " is now available."
     else
       # not enough fund
-      flash[:now] = "not enough fund to watch any videos"
+      flash[:now] = "not enough fund to redeem any videos"
     end
     #go back
     redirect_to root_path
-      
+
   end
 
   # GET /videos/new
@@ -83,7 +84,6 @@ class VideosController < ApplicationController
       @video = Video.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
       params.require(:video).permit(:title, :summary, :summary_md)
     end

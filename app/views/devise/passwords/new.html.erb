@@ -1,14 +1,13 @@
-<div class="container">
-  <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
-    <%= form_for :user, url: new_user_password_path, html: { method: :post } do |f| %>
+<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+  <%= form_for :user, url: new_user_password_path, html: { method: :post } do |f| %>
     <h2 class="heading text-center">Forgot your password?</h2>
     <%= devise_error_messages! %>
 
     <%= f.label :email %>
     <%= f.email_field :email, class: "form-control", autofocus: true %>
+    <br />
     <%= f.submit "Send me reset password instructions", class: "btn btn-primary btn-block" %>
-    <% end %>
+  <% end %>
 
-    <%= render "devise/shared/links" %>
-  </div>
+  <%= render "devise/shared/links" %>
 </div>
