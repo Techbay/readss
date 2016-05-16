@@ -30,6 +30,7 @@ class VideoDashboard < Administrate::BaseDashboard
     embed_html: Field::String,
     video_id: Field::String,
     video_type: Field::String,
+    is_pro: Field::Boolean,
     summary_md: Field::String,
   }.freeze
 

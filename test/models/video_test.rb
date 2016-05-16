@@ -24,6 +24,7 @@
 #  video_id       :string
 #  video_type     :string
 #  summary_md     :string
+#  is_pro         :boolean          default(FALSE)
 #
 
 require 'test_helper'

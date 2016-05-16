@@ -1,19 +1,16 @@
-  <h1 class="text-center">Videos</h1>
-
-  <% @videos.each do |video| %>
-    <h3>
-      <%= video.title %>
-      <span id=<%= "redeem_" + video.id.to_s %>>
-      <%= video_redeem_status(video) %>
-      </span>
-    </h3>
-    <p><%= raw video.summary %></p>
-    <div>
-      <span>views: <%= video.view_count %></span>
-      <span>likes: <%= video.like_count %></span>
-      <span>favorite: <%= video.favorite_count %></span>
-    </div>
-    <div class="embed-responsive embed-responsive-16by9" id=<%= "content_" + video.id.to_s %> >
+<h1 class="text-center">Videos</h1>
+<% @videos.each do |video| %>
+  <h3>
+    <%= video.title %>
+    <%= video_redeem_status(video) %>
+  </h3>
+  <p><%= raw video.summary %></p>
+  <div>
+    <span>views: <%= video.view_count %></span>
+    <span>likes: <%= video.like_count %></span>
+    <span>favorite: <%= video.favorite_count %></span>
+  </div>
+  <div class="embed-responsive embed-responsive-16by9" id=<%= "content_" + video.id.to_s %> >
     <%= video_content(video) %>
-    </div>
-  <% end %>
+  </div>
+<% end %>
