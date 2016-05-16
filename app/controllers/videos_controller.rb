@@ -1,6 +1,8 @@
 class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy, :redeem]
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show]
+  protect_from_forgery except: :show
+
 
   # GET /videos
   # GET /videos.json
@@ -11,6 +13,7 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+    render file: 'videos/show.js.erb'
   end
 
   def redeem
@@ -33,7 +36,6 @@ class VideosController < ApplicationController
         format.js {}
       end
     end
-      
   end
 
   # GET /videos/new

@@ -43,6 +43,7 @@ class VideoDashboard < Administrate::BaseDashboard
     :id,
     :title,
     :summary,
+    :is_pro,
     :created_at,
   ].freeze
 
@@ -68,6 +69,7 @@ class VideoDashboard < Administrate::BaseDashboard
     :comment_count,
     :duration,
     :is_hd,
+    :is_pro,
     :embed_html,
     :video_id,
     :video_type,
@@ -94,6 +96,7 @@ class VideoDashboard < Administrate::BaseDashboard
     :comment_count,
     :duration,
     :is_hd,
+    :is_pro,
     :embed_html,
     :video_id,
     :video_type,

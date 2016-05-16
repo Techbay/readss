@@ -1,13 +1,15 @@
 module VideosHelper
   # show if the video is redeemed or not
   def video_redeem_status(video)
-    return unless video.is_pro
+    unless video.is_pro
+      return show_link(video)
+    end
 
     if user_signed_in?
       if current_user.videos.include?(video)
-        content_tag :span, "You have purchased this video!", {style: "color: blue"}
+        show_link(video)
       else
-        link_to "兑换",
+        link_to "redeem",
           video_redeem_path(id: video.id),
           class: "redeem-video", method: :post,
           data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase, turbolinks: true}
@@ -31,5 +33,9 @@ module VideosHelper
     else
       image_tag(video.thumbnail_url || "administrate/search.svg", alt: "READSS")
     end
+  end
+
+  def show_link(video)
+    content_tag :a, "show", {id: video.id, class: "show-video", href: video_path(video), style: "color: blue", data: {remote: true}}
   end
 end
