@@ -1,3 +1,4 @@
-alert('js');
-$("#user_reward").html("unknown");
-//$("#<%= escape_javascript("redeem_" + @video.id.to_s) %>").html(<%= escape_javascript(video_redeem_status(@video)) %>);
+alert("<%= escape_javascript(session[:redeem_msg]) %>");
+$("#user_reward").html("<%= escape_javascript(current_user.reward.to_s) %>");
+$("#<%= escape_javascript("redeem_" + @video.id.to_s) %>").html("<%= escape_javascript(video_redeem_status(@video)) %>");
+$("#<%= escape_javascript("content_" + @video.id.to_s) %>").html("<%= escape_javascript(video_content(@video)) %>");
