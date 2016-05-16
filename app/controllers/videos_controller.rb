@@ -19,12 +19,16 @@ class VideosController < ApplicationController
       # remove points
       current_user.subtract_reward(1)
       flash[:now] = "video " + @video.title.upcase + " is now available."
+      respond_to do |format|
+        format.html { redirect_to videos_path }
+        format.js {}
+      end
+
     else
       # not enough fund
       flash[:now] = "not enough fund to watch any videos"
+      redirect_to videos_path
     end
-    #go back
-    redirect_to root_path
       
   end
 
