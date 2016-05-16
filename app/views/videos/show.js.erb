@@ -1,1 +1,3 @@
-$(".video-<%= @video.id %>").append("<%= j(render partial: 'videos/embed_video.html.erb') %>")
+if($("#content_<%= @video.id %>").length == 0) {
+  $(".video-<%= @video.id %>").append("<%= j(render partial: 'videos/embed_video.html.erb') %>")
+}
