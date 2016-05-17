@@ -13,9 +13,7 @@
 
     <div class="container">
       <%= render 'layouts/header' %>
-      <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key == "notice" ? "success" : "warning" %>"><%= value %></div>
-      <% end %>
+      <div class="top_alert"></div>
 
       <%= yield %>
     </div>
