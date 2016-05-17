@@ -22,13 +22,15 @@ class VideosController < ApplicationController
       current_user.videos << @video
       # remove points
       current_user.subtract_reward(1)
-      flash[:notice] = "video " + @video.title.upcase + " is now available."
+      @msg = "video " + @video.title.upcase + " is now available."
+      flash[:notice] = @msg
       respond_to do |format|
         format.html { redirect_to videos_path }
         format.js {}
       end
     else
-      flash[:alert] = "Not enough fund to redeem any videos!"
+      @msg = "Not enough fund to redeem any videos!"
+      flash[:alert] = @msg
       respond_to do |format|
         format.html { redirect_to videos_path }
         format.js {}

@@ -1,5 +1,4 @@
-alert("<%= escape_javascript(flash[:notice]) %>");
+alert("<%= @msg %>"); 
 
 $("#user_reward").html("<%= escape_javascript(current_user.reward.to_s) %>");
 $("#redeem_<%= @video.id %>").html("<%= escape_javascript(video_redeem_status(@video)) %>");
-$("#content_<%= @video.id %>").html("<%= escape_javascript(video_content(@video)) %>");

@@ -11,7 +11,7 @@ module VideosHelper
       else
         link_to "redeem",
           video_redeem_path(id: video.id),
-          class: "redeem-video", method: :post,
+          class: "redeem-video", method: :post, remote: true, id: "redeem_"+video.id.to_s,
           data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase, turbolinks: true}
       end
     end
@@ -36,6 +36,6 @@ module VideosHelper
   end
 
   def show_link(video)
-    content_tag :a, "show", {id: video.id, class: "show-video", href: video_path(video), style: "color: blue", data: {remote: true}}
+    content_tag :a, "show", {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
   end
 end
