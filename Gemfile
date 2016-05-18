@@ -30,6 +30,7 @@ gem 'annotate'
 gem 'devise'
 gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'httparty'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'
