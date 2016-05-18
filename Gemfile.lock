@@ -301,6 +301,7 @@ DEPENDENCIES
   devise
   feedjira
   figaro
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
@@ -319,9 +320,6 @@ DEPENDENCIES
   web-console (~> 3.0)
   whenever
   yt (~> 0.25.5)
-
-RUBY VERSION
-   ruby 2.3.0p0
 
 BUNDLED WITH
    1.12.3
