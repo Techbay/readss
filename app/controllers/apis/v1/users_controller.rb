@@ -3,7 +3,7 @@ module Apis::V1
     include ::Authenticates
 
     protect_from_forgery with: :null_session
-    before_action :authenticate, only: [:add_reward, :subtract_reward]
+    # before_action :authenticate, only: [:add_reward, :subtract_reward]
 
     def add_reward
       if ar = ApiRequest.find_by(trans_id: params[:id])
