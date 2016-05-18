@@ -12,7 +12,8 @@ module VideosHelper
         link_to "redeem",
           video_redeem_path(id: video.id),
           class: "redeem-video", method: :post, remote: true, id: "redeem_"+video.id.to_s,
-          data: {video_id: video.id, confirm: "Click OK to use your reward to watch " + video.title.upcase, turbolinks: true}
+          data: {video_id: video.id, confirm: "It costs 1 point to watch #{video.title.upcase}. You have #{current_user.reward} points as of now.", 
+              verify: current_user.reward-1, verify_text: "Please answer how many point you have remaining after watching the video.", turbolinks: true}
       end
     end
   end
