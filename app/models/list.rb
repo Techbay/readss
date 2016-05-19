@@ -11,8 +11,9 @@
 
 class List < ApplicationRecord
   validates :name, :rid, presence: true, uniqueness: true
+  enum source_type: {youtube: 0, vimeo: 1, youku: 2}
 
   def fetching_videos
-    Video.fetching_videos(rid)
+    Video.fetching_videos(self)
   end
 end

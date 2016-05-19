@@ -37,32 +37,60 @@ class Video < ApplicationRecord
     end
   end
 
-  def self.fetching_videos(list_id)
-    items = Youtube::Base.playlist_items(list_id)
-    items.each do |i|
-      video = i.video
-      begin
-        entry = find_or_create_by(video_id: video.id)
-        entry.update(
-          title: video.title,
-          summary: video.description,
-          video_type: "Youtube",
-          published_at: video.published_at,
-          thumbnail_url: video.thumbnail_url,
-          channel_id: video.channel_id,
-          channel_title: video.channel_title,
-          category_id: video.category_id,
-          category_title: video.category_title,
-          view_count: video.view_count,
-          like_count: video.like_count,
-          dislike_count: video.dislike_count,
-          favorite_count: video.favorite_count,
-          comment_count: video.comment_count,
-          duration: video.duration,
-          is_hd: video.hd?,
-          embed_html: video.embed_html)
-      rescue
-        next
+  def self.fetching_videos(list)
+    type = list.source_type
+    list_id = list.rid
+    if type == "youtube"
+      items = ::Youtube::Base.playlist_items(list)
+      items.each do |i|
+        video = i.video
+        begin
+          entry = find_or_create_by(video_id: video.id)
+          entry.update(
+                       title: video.title,
+                       summary: video.description,
+                       video_type: "Youtube",
+                       published_at: video.published_at,
+                       thumbnail_url: video.thumbnail_url,
+                       channel_id: video.channel_id,
+                       channel_title: video.channel_title,
+                       category_id: video.category_id,
+                       category_title: video.category_title,
+                       view_count: video.view_count,
+                       like_count: video.like_count,
+                       dislike_count: video.dislike_count,
+                       favorite_count: video.favorite_count,
+                       comment_count: video.comment_count,
+                       duration: video.duration,
+                       is_hd: video.hd?,
+                       embed_html: video.embed_html)
+        rescue
+          next
+        end
+      end
+    elsif type == "youku"
+      videos = ::Youku::Base.playlists(list)
+      videos.each do |video|
+        begin
+          id = video["id"]
+          embed_html = "<embed src='http://player.youku.com/player.php/sid/" + id + "/v.swf' allowFullScreen='true' quality='high' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"
+          entry = find_or_create_by(video_id: id)
+          entry.update(
+                       title: video["title"],
+                       video_type: "Youku",
+                       published_at: video["published"],
+                       thumbnail_url: video["thumbnail"],
+                       category_title: video["category"],
+                       view_count: video["view_count"],
+                       like_count: video["up_count"],
+                       dislike_count: video["down_count"],
+                       favorite_count: video["favorite_count"],
+                       comment_count: video["comment_count"],
+                       duration: video["duration"],
+                       embed_html: embed_html)
+        rescue
+          next
+        end
       end
     end
   end
