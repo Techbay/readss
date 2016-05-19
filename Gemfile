@@ -20,6 +20,9 @@ gem 'jbuilder', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# use bootstrap style confirmation box
+gem 'data-confirm-modal', github: 'ifad/data-confirm-modal'
+
 gem 'feedjira'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.3.6'

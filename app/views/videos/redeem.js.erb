@@ -1,4 +1,11 @@
-alert("<%= @msg %>"); 
+<% unless flash[:redeem].nil? %>
+  <% flash[:redeem].each  do |k, v| %>
+    notice = $("<div></div>");
+    notice.append('<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>');
+    notice.attr("class", "alert alert-<%= k %>").append("<%= v %>");
+    $(".video-<%= @video.id %>").append(notice);
+  <% end %>
+<% end %>
 
 $("#user_reward").html("<%= escape_javascript(current_user.reward.to_s) %>");
 $("#redeem_<%= @video.id %>").html("<%= escape_javascript(video_redeem_status(@video)) %>");

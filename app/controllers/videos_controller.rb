@@ -17,20 +17,24 @@ class VideosController < ApplicationController
   end
 
   def redeem
+    # a flash message hash associated with redeem
+    flash[:redeem] = {}
     if (current_user.has_reward?)
       # add video to user
       current_user.videos << @video
       # remove points
       current_user.subtract_reward(1)
       @msg = "video " + @video.title.upcase + " is now available."
-      flash[:notice] = @msg
+      flash[:redeem][:success] = @msg
+      flash.discard
       respond_to do |format|
         format.html { redirect_to videos_path }
         format.js {}
       end
     else
       @msg = "Not enough fund to redeem any videos!"
-      flash[:alert] = @msg
+      flash[:redeem][:warning] = @msg
+      flash.discard
       respond_to do |format|
         format.html { redirect_to videos_path }
         format.js {}
