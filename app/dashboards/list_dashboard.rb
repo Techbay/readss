@@ -11,6 +11,7 @@ class ListDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     rid: Field::String,
+    source_type: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -24,6 +25,7 @@ class ListDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :rid,
+    :source_type,
     :created_at,
   ].freeze
 
@@ -33,6 +35,7 @@ class ListDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :rid,
+    :source_type,
     :created_at,
     :updated_at,
   ].freeze
@@ -43,6 +46,7 @@ class ListDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :rid,
+    :source_type,
   ].freeze
 
   # Overwrite this method to customize how lists are displayed
