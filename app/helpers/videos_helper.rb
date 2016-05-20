@@ -13,8 +13,8 @@ module VideosHelper
           video_redeem_path(id: video.id),
           class: "redeem-video", method: :post, remote: true, id: "redeem_"+video.id.to_s,
           #data: {video_id: video.id, confirm: "It costs 1 point to watch #{video.title.upcase}. You have #{current_user.reward} points as of now.",
-          data: {video_id: video.id, confirm: t(:redeem_confirm, title: video.title.upcase, rewards: current_user.reward),
-              verify: current_user.reward-1, verify_text: t(:redeem_verify, default: "Please answer how many point you have remaining after watching the video."), turbolinks: true}
+          data: {video_id: video.id, confirm: t('videos_helper.redeem_confirm', title: video.title.upcase, rewards: current_user.reward),
+              verify: current_user.reward-1, verify_text: t('videos_helper.redeem_verify', default: "Please answer how many point you have remaining after watching the video."), turbolinks: true}
       end
     end
   end
@@ -38,6 +38,7 @@ module VideosHelper
   end
 
   def show_link(video)
-    content_tag :a, t(:show, default: "Show"), {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
+    #content_tag :a, t(:show, default: "Show"), {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
+    content_tag :a, t('videos_helper.show_link.show', default: "Show"), {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
   end
 end
