@@ -13,7 +13,8 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
-    render file: 'videos/show.js.erb'
+    # render file: 'videos/show.js.erb'
+    @video = Video.find(params[:id])
   end
 
   def redeem

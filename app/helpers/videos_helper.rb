@@ -37,6 +37,7 @@ module VideosHelper
   end
 
   def show_link(video)
-    content_tag :a, "show", {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
+    # content_tag :a, "show", {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: "", remote: true}}
+    content_tag :a, "show", {id: "show_"+video.id.to_s, class: "show-video", href: video_path(video), style: "color: blue", data: {name: ""}}
   end
 end

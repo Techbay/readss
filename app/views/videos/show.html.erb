@@ -1,12 +1,19 @@
 <p>
-  <strong>Title:</strong>
-  <%= @video.title %>
+  <h2><strong><%= @video.title %></strong></h2>
 </p>
-
+<p>
+  <%= render partial: 'videos/embed_video.html.erb' %>
+</p>
+<p>
+<span>views: <%= @video.view_count %></span>
+  <span>likes: <%= @video.like_count %></span>
+  <span>favorite: <%= @video.favorite_count %></span>
+</p>
 <p id="summary">
   <strong>Summary:</strong>
   <%= raw @video.summary %>
 </p>
 
-<%= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>
+<%= render partial: 'videos/disqus.html.erb' %>
+
+<%= link_to 'Back', videos_path, class: "btn btn-primary" %>
