@@ -24,7 +24,7 @@ class VideosController < ApplicationController
       current_user.videos << @video
       # remove points
       current_user.subtract_reward(1)
-      @msg = "video " + @video.title.upcase + " is now available."
+      @msg = t('.redeem_success', title: @video.title.upcase, default: "video " + @video.title.upcase + " is now available.")
       flash[:redeem][:success] = @msg
       flash.discard
       respond_to do |format|
@@ -32,7 +32,7 @@ class VideosController < ApplicationController
         format.js {}
       end
     else
-      @msg = "Not enough fund to redeem any videos!"
+      @msg = t('.redeem_failure', default: "Not enough fund to redeem any videos!")
       flash[:redeem][:warning] = @msg
       flash.discard
       respond_to do |format|

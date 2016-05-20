@@ -1,0 +1,16 @@
+zh-CN:
+  rewards: "积分"
+  show: "观看"
+  redeem: "兑换"
+  redeem_confirm: "观看 %{title} 将花费一个积分，您现有%{rewards}个积分。"
+  redeem_verify: "请问观看视频后您还有多少积分？"
+  layouts:
+    header:
+      READSS: "网站中文名"    
+      log_out: "退出"
+  videos:
+    index:
+      Videos: "所有视频"
+    redeem:
+      redeem_success: "视频 %{title} 现在可以观看。"
+      redeem_failure: "您的积分不够兑换视频。"
