@@ -8,6 +8,7 @@ zh-CN:
     header:
       READSS: "网站中文名"    
       log_out: "退出"
+      log_in: "登录"
   videos:
     index:
       Videos: "所有视频"

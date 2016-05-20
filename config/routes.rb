@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope "/:locale", locale: /en|zh-CN/ do
+  scope "(/:locale)", locale: /en|zh-CN/ do
     devise_for :users
   
     namespace :admin do
