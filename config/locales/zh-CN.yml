@@ -1,6 +1,9 @@
 zh-CN:
   rewards: "积分"
   redeem: "兑换"
+  view_count: "观看"
+  likes: "赞"
+  favorite: "收藏"
   layouts:
     header:
       READSS: "网站中文名"    

@@ -13,9 +13,9 @@
           <%= video_redeem_status(video) %>
         </h4>
         <p>
-          <span>views: <%= video.view_count %></span>
-          <span>likes: <%= video.like_count %></span>
-          <span>favorite: <%= video.favorite_count %></span>
+          <span><%= t(:view_count, default: "views") %>: <%= video.view_count %></span>
+          <span><%= t(:likes, default: "likes") %>: <%= video.like_count %></span>
+          <span><%= t(:favorite, default: "favorite") %>: <%= video.favorite_count %></span>
         </p>
       </div>
     </div>
