@@ -1,5 +1,6 @@
 <p>
   <h2><strong><%= @video.title %></strong></h2>
+  <%= link_to 'Back', videos_path, class: "btn btn-primary" %>
 </p>
 <p>
   <%= render partial: 'videos/embed_video.html.erb' %>
@@ -15,5 +16,3 @@
 </p>
 
 <%= render partial: 'videos/disqus.html.erb' %>
-
-<%= link_to 'Back', videos_path, class: "btn btn-primary" %>
