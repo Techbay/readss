@@ -25,7 +25,7 @@ class VideosController < ApplicationController
     flash[:redeem] = {}
     if (current_user.has_reward?)
       # add video to user
-      current_user.videos << @video
+      current_user.videos << @video unless current_user.videos.include?(@video)
       # remove points
       current_user.subtract_reward(1)
       @msg = t('.redeem_success', title: @video.title.upcase, default: "video " + @video.title.upcase + " is now available.")

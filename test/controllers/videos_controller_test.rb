@@ -48,4 +48,34 @@ class VideosControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to videos_path
   end
+  
+  test "should subtract point after redeem" do
+    
+     assert_difference('users(:test_user).reward', -1) do
+       post video_redeem_path params: {id: @video.id}
+       users(:test_user).reload
+     end
+     
+     users(:test_user).update(reward: 0)
+     users(:test_user).reload
+     assert_no_difference 'users(:test_user).reward' do
+       post video_redeem_path params: {id: @video.id}
+     end
+  end
+  
+  test "should add video after redeem" do
+     # should add video
+     assert_difference('users(:test_user).videos.count', 1) do
+       post video_redeem_path params: {id: @video.id}
+       users(:test_user).reload
+     end
+     
+     # should not add the same video 
+     assert_no_difference('users(:test_user).videos.count') do
+       post video_redeem_path params: {id: @video.id}
+       users(:test_user).reload
+     end
+  end
+  
+  
 end
