@@ -40,3 +40,9 @@ two:
 test_md2html:
   title: markdown test
   summary: 
+  is_pro: true
+  
+test_pro:
+  title: A Pro video
+  summary: costs 1 point
+  is_pro: true
