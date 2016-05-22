@@ -1,10 +1,10 @@
 <p>
-  <strong>Title:</strong>
+  <strong><%= t('videos.title', default: 'Title') %>:</strong>
   <%= @video.title %>
 </p>
 
 <p id="summary">
-  <strong>Summary:</strong>
+  <strong><%= t('videos.summary', default: 'Summary') %>:</strong>
   <%= raw @video.summary %>
 </p>
 

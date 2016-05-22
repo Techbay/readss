@@ -10,6 +10,8 @@ zh-CN:
       log_out: "退出"
       log_in: "登录"
   videos:
+    title: "标题"
+    summary: "概要"
     index:
       Videos: "所有视频"
     redeem:
