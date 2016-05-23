@@ -6,7 +6,7 @@ zh-CN:
   favorite: "收藏"
   layouts:
     header:
-      READSS: "网站中文名"    
+      READSS: "VideoBay"
       log_out: "退出"
       log_in: "登录"
   videos:
