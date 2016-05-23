@@ -34,6 +34,7 @@ gem 'devise'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'httparty'
+gem 'sendgrid'
 
 # use redcarpet for md to html conversion
 gem 'redcarpet'
