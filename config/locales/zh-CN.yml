@@ -1,0 +1,24 @@
+zh-CN:
+  rewards: "积分"
+  redeem: "兑换"
+  view_count: "观看"
+  likes: "赞"
+  favorite: "收藏"
+  layouts:
+    header:
+      READSS: "VideoBay"
+      log_out: "退出"
+      log_in: "登录"
+  videos:
+    title: "标题"
+    summary: "概要"
+    index:
+      Videos: "所有视频"
+    redeem:
+      redeem_success: "视频 %{title} 现在可以观看。"
+      redeem_failure: "您的积分不够兑换视频。"
+  videos_helper:
+    redeem_confirm: "观看 %{title} 将花费一个积分，您现有%{rewards}个积分。"
+    redeem_verify: "请问观看视频后您还有多少积分？"
+    show_link:
+      show: "观看视频"

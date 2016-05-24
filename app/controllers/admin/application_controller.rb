@@ -6,7 +6,8 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   class ApplicationController < Administrate::ApplicationController
-    before_filter :authenticate_admin
+    before_filter :authenticate_admin, :set_locale
+    
 
     def authenticate_admin
       # TODO Add authentication logic here.
@@ -20,6 +21,15 @@ module Admin
         redirect_to root_path
       end
     end
+    
+    def default_url_options(options = {})
+      { locale: I18n.locale }.merge options
+    end 
+    
+    def set_locale
+      I18n.locale = params[:locale] || I18n.default_locale
+    end
+
 
     # Override this value to specify the number of elements to display at a time
     # on index pages. Defaults to 20.

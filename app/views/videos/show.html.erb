@@ -11,7 +11,7 @@
   <span>favorite: <%= @video.favorite_count %></span>
 </p>
 <p id="summary">
-  <strong>Summary:</strong>
+  <strong><%= t('videos.summary', default: 'Summary') %>:</strong>
   <%= raw @video.summary %>
 </p>
 

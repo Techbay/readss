@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  videos_helper:
+    redeem_confirm: "It costs 1 point to watch %{title}. You have %{rewards} points as of now."

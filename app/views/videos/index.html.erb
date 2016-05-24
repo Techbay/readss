@@ -1,4 +1,4 @@
-<h1 class="text-center">Videos</h1>
+<h1 class="text-center"><%= t('.Videos', default:'All Videos') %></h1>
 <div class="videos">
   <% @videos.each do |video| %>
     <div class="media video-<%= video.id %> video">
@@ -9,13 +9,13 @@
       </div>
       <div class="media-body">
         <h4 class="media-heading">
-          <%= video.title %>
+          <%= content_tag :a, video.title, {href: video_path(video)} %>
           <%= video_redeem_status(video) %>
         </h4>
         <p>
-          <span>views: <%= video.view_count %></span>
-          <span>likes: <%= video.like_count %></span>
-          <span>favorite: <%= video.favorite_count %></span>
+          <span><%= t(:view_count, default: "views") %>: <%= video.view_count %></span>
+          <span><%= t(:likes, default: "likes") %>: <%= video.like_count %></span>
+          <span><%= t(:favorite, default: "favorite") %>: <%= video.favorite_count %></span>
         </p>
       </div>
     </div>

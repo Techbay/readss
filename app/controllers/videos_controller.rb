@@ -15,6 +15,10 @@ class VideosController < ApplicationController
   def show
     # render file: 'videos/show.js.erb'
     @video = Video.find(params[:id])
+    respond_to do |format|
+      format.html 
+      format.js {}
+    end
   end
 
   def redeem
@@ -22,10 +26,10 @@ class VideosController < ApplicationController
     flash[:redeem] = {}
     if (current_user.has_reward?)
       # add video to user
-      current_user.videos << @video
+      current_user.videos << @video unless current_user.videos.include?(@video)
       # remove points
       current_user.subtract_reward(1)
-      @msg = "video " + @video.title.upcase + " is now available."
+      @msg = t('.redeem_success', title: @video.title.upcase, default: "video " + @video.title.upcase + " is now available.")
       flash[:redeem][:success] = @msg
       flash.discard
       respond_to do |format|
@@ -33,7 +37,7 @@ class VideosController < ApplicationController
         format.js {}
       end
     else
-      @msg = "Not enough fund to redeem any videos!"
+      @msg = t('.redeem_failure', default: "Not enough fund to redeem any videos!")
       flash[:redeem][:warning] = @msg
       flash.discard
       respond_to do |format|

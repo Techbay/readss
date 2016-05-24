@@ -16,5 +16,7 @@ module Readss
 
     # FIXME: need to remove when administrate fix parameters bug
     config.action_controller.permit_all_parameters = true
+    
+    # i18n
   end
 end
