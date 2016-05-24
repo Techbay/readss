@@ -5,8 +5,8 @@ module Youtube
       videos.where(order: 'viewCount').first(5)
     end
 
-    def self.playlist_items(list_id)
-      playlist = Yt::Playlist.new id: list_id
+    def self.playlist_items(list)
+      playlist = Yt::Playlist.new id: list.rid
       playlist.playlist_items
     end
 
