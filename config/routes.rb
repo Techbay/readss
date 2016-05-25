@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :lists
       resources :videos
       resources :api_requests
+      resources :tags
 
       get '/:locale' => 'users#index'
       root to: "users#index"
