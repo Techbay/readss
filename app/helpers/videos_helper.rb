@@ -11,10 +11,11 @@ module VideosHelper
       else
         link_to t(:redeem, default: "Redeem"),
           video_redeem_path(id: video.id),
-          class: "redeem-video", method: :post, remote: true, id: "redeem_"+video.id.to_s,
+          class: "redeem-video", method: :post, remote: true, id: "redeem_"+video.id.to_s, title: t('commit_box_title', default: "Are you sure?"),
           #data: {video_id: video.id, confirm: "It costs 1 point to watch #{video.title.upcase}. You have #{current_user.reward} points as of now.",
           data: {video_id: video.id, confirm: t('videos_helper.redeem_confirm', title: video.title.upcase, rewards: current_user.reward),
-              verify: current_user.reward-1, verify_text: t('videos_helper.redeem_verify', default: "Please answer how many point you have remaining after watching the video."), turbolinks: true}
+                cancel: t('cancel', default:'Cancel'), commit: t('commit', default: 'Confirm'),
+                verify: current_user.reward-1, verify_text: t('videos_helper.redeem_verify', default: "Please answer how many point you have remaining after watching the video."), turbolinks: true}
       end
     end
   end

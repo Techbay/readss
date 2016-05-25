@@ -29,8 +29,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable, :lockable, :confirmable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable, :rememberable, :recoverable
   has_and_belongs_to_many :videos
 
   def add_reward(change=0)
