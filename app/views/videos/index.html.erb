@@ -16,7 +16,7 @@
           <span><%= t(:view_count, default: "views") %>: <%= video.view_count %></span>
           <span><%= t(:likes, default: "likes") %>: <%= video.like_count %></span>
           <span><%= t(:favorite, default: "favorite") %>: <%= video.favorite_count %></span>
-          <span><%= t(:tags, default: "tags") %>: <%= video.tags.map {|t| t.name + " "} %></span>
+          <span><%= t(:tags, default: "tags") %>: <%= raw(show_tags(video)) %></span>
         </p>
       </div>
     </div>
