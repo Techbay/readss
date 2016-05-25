@@ -4,6 +4,9 @@ zh-CN:
   view_count: "观看"
   likes: "赞"
   favorite: "收藏"
+  commit: "确认"
+  commit_box_title: "请确认"
+  cancel: "取消"
   layouts:
     header:
       READSS: "VideoBay"
