@@ -7,7 +7,12 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    
+    if I18n.locale.to_s == "en"
+      @videos = Video.where(video_type: "Youtube")
+    elsif I18n.locale.to_s == "zh-CN"
+      @videos = Video.where(video_type: "Youku")
+    end
   end
 
   # GET /videos/1
