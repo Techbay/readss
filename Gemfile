@@ -32,6 +32,7 @@ gem 'vimeo', '~> 1.5', '>= 1.5.4'
 gem 'annotate'
 gem 'devise'
 gem 'devise-i18n'
+gem 'rails-i18n', '~> 5.0.0.beta1' # For 5.0.0.beta1
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'httparty'
