@@ -9,9 +9,9 @@ class VideosController < ApplicationController
   def index
     
     if I18n.locale.to_s == "en"
-      @videos = Video.where(video_type: "Youtube")
+      @videos = Video.video_by_type("Youtube")
     elsif I18n.locale.to_s == "zh-CN"
-      @videos = Video.where(video_type: "Youku")
+      @videos = Video.video_by_type("Youku")
     end
   end
 
