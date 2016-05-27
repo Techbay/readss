@@ -31,6 +31,12 @@ class Video < ApplicationRecord
   has_and_belongs_to_many :users
   has_and_belongs_to_many :tags
   # this is done before save or update
+
+  # scope :by_youtube, -> {where(video_type: "Youtube")}
+  # scope :by_youku, -> {where(video_type: "Youku")}
+  scope :video_by_type, ->(video_type) {where(video_type: video_type)}
+
+
   before_save do
     if self.summary_md_changed?
       puts "convert md to html"
