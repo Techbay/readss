@@ -42,7 +42,7 @@ class TagDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how videos are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(video)
-  #   "Video ##{video.id}"
-  # end
+  def display_resource(tag)
+    "Tag ##{tag.id} #{tag.name}"
+  end
 end
