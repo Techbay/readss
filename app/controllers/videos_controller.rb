@@ -7,7 +7,6 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    
     if I18n.locale.to_s == "en"
       @videos = Video.video_by_type("Youtube")
     elsif I18n.locale.to_s == "zh-CN"
@@ -21,7 +20,7 @@ class VideosController < ApplicationController
     # render file: 'videos/show.js.erb'
     @video = Video.find(params[:id])
     respond_to do |format|
-      format.html 
+      format.html
       format.js {}
     end
   end

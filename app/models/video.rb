@@ -54,23 +54,23 @@ class Video < ApplicationRecord
         begin
           entry = find_or_create_by(video_id: video.id)
           entry.update(
-                       title: video.title,
-                       summary: video.description,
-                       video_type: "Youtube",
-                       published_at: video.published_at,
-                       thumbnail_url: video.thumbnail_url,
-                       channel_id: video.channel_id,
-                       channel_title: video.channel_title,
-                       category_id: video.category_id,
-                       category_title: video.category_title,
-                       view_count: video.view_count,
-                       like_count: video.like_count,
-                       dislike_count: video.dislike_count,
-                       favorite_count: video.favorite_count,
-                       comment_count: video.comment_count,
-                       duration: video.duration,
-                       is_hd: video.hd?,
-                       embed_html: video.embed_html)
+            title: video.title,
+            summary: video.description,
+            video_type: "Youtube",
+            published_at: video.published_at,
+            thumbnail_url: video.thumbnail_url,
+            channel_id: video.channel_id,
+            channel_title: video.channel_title,
+            category_id: video.category_id,
+            category_title: video.category_title,
+            view_count: video.view_count,
+            like_count: video.like_count,
+            dislike_count: video.dislike_count,
+            favorite_count: video.favorite_count,
+            comment_count: video.comment_count,
+            duration: video.duration,
+            is_hd: video.hd?,
+            embed_html: video.embed_html)
         rescue
           next
         end
@@ -83,18 +83,18 @@ class Video < ApplicationRecord
           embed_html = "<embed src='http://player.youku.com/player.php/sid/" + id + "/v.swf' allowFullScreen='true' quality='high' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"
           entry = find_or_create_by(video_id: id)
           entry.update(
-                       title: video["title"],
-                       video_type: "Youku",
-                       published_at: video["published"],
-                       thumbnail_url: video["thumbnail"],
-                       category_title: video["category"],
-                       view_count: video["view_count"],
-                       like_count: video["up_count"],
-                       dislike_count: video["down_count"],
-                       favorite_count: video["favorite_count"],
-                       comment_count: video["comment_count"],
-                       duration: video["duration"],
-                       embed_html: embed_html)
+            title: video["title"],
+            video_type: "Youku",
+            published_at: video["published"],
+            thumbnail_url: video["thumbnail"],
+            category_title: video["category"],
+            view_count: video["view_count"],
+            like_count: video["up_count"],
+            dislike_count: video["down_count"],
+            favorite_count: video["favorite_count"],
+            comment_count: video["comment_count"],
+            duration: video["duration"],
+            embed_html: embed_html)
         rescue
           next
         end
