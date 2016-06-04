@@ -1,7 +1,7 @@
 # features/home_page.feature
 Feature: Home page
 
-
+#@javascript
 Scenario: Not on VideoBay's home page
   When I am not on the homepage
   Then I should not see the title as "All Videos"
