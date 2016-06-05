@@ -13,4 +13,5 @@ Then(/^I should( not)? see the title as "([^"]*)"$/) do |bool, title|
   actual = (page.all("h1.text-center", text: title).size == 1)
   msg = 'I should#{bool} see the title as "#{title}"'
   assert actual == expected, msg
+  # page.save_screenshot("~/workspace/videobay.png", :full => true)
 end
