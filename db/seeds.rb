@@ -8,3 +8,6 @@ Tag.create(name: "html")
 List.all.each do |l|
   l.fetching_videos
 end
+
+# set pro to the first video
+Video.first.update(is_pro: true)
