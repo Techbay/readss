@@ -5,6 +5,7 @@ When(/^User "([^"]*)":"([^"]*)" has( not)? logged in$/) do |email, password, boo
   else
     sign_in_user(email, password*2)
   end
+  @current_user = User.find_by_email(email)
 end
 
 Then(/^I should( not)? see "([^"]*)"$/) do |bool, str|
