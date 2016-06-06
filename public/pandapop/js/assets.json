@@ -1,0 +1,1116 @@
+{"frames": [
+
+{
+	"filename": "PandaTear.png",
+	"frame": {"x":1914,"y":460,"w":18,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+	"sourceSize": {"w":18,"h":20}
+},
+{
+	"filename": "TutorialMatch3Artwork.png",
+	"frame": {"x":1600,"y":2,"w":325,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":325,"h":142},
+	"sourceSize": {"w":325,"h":142}
+},
+{
+	"filename": "boom.png",
+	"frame": {"x":1210,"y":132,"w":256,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":240},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "boom_01.png",
+	"frame": {"x":1680,"y":1258,"w":62,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":62,"h":54},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_02.png",
+	"frame": {"x":1962,"y":690,"w":62,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":62,"h":64},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_03.png",
+	"frame": {"x":1960,"y":756,"w":64,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":62},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_04.png",
+	"frame": {"x":1297,"y":1207,"w":64,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":62},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_05.png",
+	"frame": {"x":1830,"y":1164,"w":64,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":64,"h":56},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_06.png",
+	"frame": {"x":1896,"y":1164,"w":62,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":62,"h":56},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_07.png",
+	"frame": {"x":1968,"y":582,"w":58,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":58,"h":56},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_08.png",
+	"frame": {"x":1968,"y":640,"w":54,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":10,"w":54,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_09.png",
+	"frame": {"x":1974,"y":1000,"w":54,"h":46},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":11,"w":54,"h":46},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_10.png",
+	"frame": {"x":1974,"y":1097,"w":46,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":8,"w":46,"h":48},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_11.png",
+	"frame": {"x":1099,"y":1271,"w":44,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":44,"h":42},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_12.png",
+	"frame": {"x":1145,"y":1271,"w":44,"h":36},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":44,"h":36},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_13.png",
+	"frame": {"x":1191,"y":1271,"w":32,"h":36},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":12,"w":32,"h":36},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_14.png",
+	"frame": {"x":2008,"y":233,"w":20,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":15,"w":20,"h":32},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_15.png",
+	"frame": {"x":1176,"y":891,"w":18,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":21,"w":18,"h":18},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "boom_16.png",
+	"frame": {"x":1280,"y":883,"w":8,"h":6},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":24,"w":8,"h":6},
+	"sourceSize": {"w":64,"h":64}
+},
+{
+	"filename": "bubble_blue.png",
+	"frame": {"x":1512,"y":873,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubble_green.png",
+	"frame": {"x":1368,"y":1048,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubble_orange.png",
+	"frame": {"x":1238,"y":1077,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubble_pink.png",
+	"frame": {"x":802,"y":1098,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubble_red.png",
+	"frame": {"x":1413,"y":543,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubbles.png",
+	"frame": {"x":958,"y":2,"w":640,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":128},
+	"sourceSize": {"w":640,"h":128}
+},
+{
+	"filename": "bubbles_00.png",
+	"frame": {"x":1283,"y":543,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubbles_01.png",
+	"frame": {"x":1368,"y":1048,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubbles_02.png",
+	"frame": {"x":802,"y":1098,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubbles_03.png",
+	"frame": {"x":1238,"y":1077,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "bubbles_04.png",
+	"frame": {"x":1413,"y":543,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "cageBar_1.png",
+	"frame": {"x":1578,"y":536,"w":16,"h":113},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":4,"w":16,"h":113},
+	"sourceSize": {"w":20,"h":119}
+},
+{
+	"filename": "cageBar_2.png",
+	"frame": {"x":1756,"y":864,"w":16,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":16,"h":117},
+	"sourceSize": {"w":20,"h":119}
+},
+{
+	"filename": "cageBar_3.png",
+	"frame": {"x":2008,"y":118,"w":20,"h":113},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":20,"h":113},
+	"sourceSize": {"w":20,"h":119}
+},
+{
+	"filename": "cageBar_4.png",
+	"frame": {"x":1642,"y":862,"w":16,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":16,"h":117},
+	"sourceSize": {"w":20,"h":119}
+},
+{
+	"filename": "cageBottom.png",
+	"frame": {"x":500,"y":1170,"w":197,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":28},
+	"sourceSize": {"w":197,"h":28}
+},
+{
+	"filename": "cageTop.png",
+	"frame": {"x":932,"y":1211,"w":197,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":24},
+	"sourceSize": {"w":197,"h":28}
+},
+{
+	"filename": "happyPanda.png",
+	"frame": {"x":402,"y":1198,"w":92,"h":115},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":115},
+	"sourceSize": {"w":92,"h":115}
+},
+{
+	"filename": "heart.png",
+	"frame": {"x":1974,"y":1048,"w":50,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":47},
+	"sourceSize": {"w":50,"h":47}
+},
+{
+	"filename": "icon.png",
+	"frame": {"x":500,"y":868,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "lifebar.png",
+	"frame": {"x":2,"y":1198,"w":396,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":0,"w":396,"h":41},
+	"sourceSize": {"w":404,"h":41}
+},
+{
+	"filename": "lifebar_01.png",
+	"frame": {"x":496,"y":1282,"w":186,"h":25},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":8,"w":186,"h":25},
+	"sourceSize": {"w":202,"h":41}
+},
+{
+	"filename": "lifebar_02.png",
+	"frame": {"x":1254,"y":500,"w":202,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":202,"h":41},
+	"sourceSize": {"w":202,"h":41}
+},
+{
+	"filename": "panda_baby_rock_01.png",
+	"frame": {"x":1902,"y":1082,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_02.png",
+	"frame": {"x":1828,"y":1231,"w":70,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":33,"w":70,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_03.png",
+	"frame": {"x":1756,"y":1069,"w":72,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":33,"w":72,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_04.png",
+	"frame": {"x":1752,"y":1231,"w":74,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":35,"w":74,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_05.png",
+	"frame": {"x":1498,"y":1135,"w":86,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":34,"w":86,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_06.png",
+	"frame": {"x":1586,"y":1215,"w":92,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":34,"w":92,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_07.png",
+	"frame": {"x":1690,"y":702,"w":96,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":36,"w":96,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_08.png",
+	"frame": {"x":1592,"y":702,"w":96,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":36,"w":96,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_09.png",
+	"frame": {"x":799,"y":1228,"w":98,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":37,"w":98,"h":74},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_10.png",
+	"frame": {"x":999,"y":1237,"w":98,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":35,"w":98,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_11.png",
+	"frame": {"x":1686,"y":620,"w":96,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":31,"w":96,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_12.png",
+	"frame": {"x":1842,"y":374,"w":90,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":27,"w":90,"h":84},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_13.png",
+	"frame": {"x":1882,"y":670,"w":78,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":29,"w":78,"h":82},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_14.png",
+	"frame": {"x":1680,"y":1172,"w":70,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":70,"h":84},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_15.png",
+	"frame": {"x":1582,"y":1035,"w":82,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":22,"w":82,"h":88},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_16.png",
+	"frame": {"x":1596,"y":530,"w":88,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":24,"w":88,"h":86},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_17.png",
+	"frame": {"x":1592,"y":780,"w":92,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":30,"w":92,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_18.png",
+	"frame": {"x":1934,"y":416,"w":94,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":37,"w":94,"h":74},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_19.png",
+	"frame": {"x":1784,"y":630,"w":96,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":41,"w":96,"h":70},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_20.png",
+	"frame": {"x":304,"y":1241,"w":96,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":39,"w":96,"h":72},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_21.png",
+	"frame": {"x":699,"y":1170,"w":98,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":37,"w":98,"h":74},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_22.png",
+	"frame": {"x":899,"y":1237,"w":98,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":35,"w":98,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_23.png",
+	"frame": {"x":1686,"y":538,"w":96,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":31,"w":96,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_24.png",
+	"frame": {"x":1686,"y":780,"w":90,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":29,"w":90,"h":82},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_25.png",
+	"frame": {"x":1880,"y":754,"w":78,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":30,"w":78,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_26.png",
+	"frame": {"x":1756,"y":983,"w":72,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":26,"w":72,"h":84},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_27.png",
+	"frame": {"x":1586,"y":1125,"w":78,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":22,"w":78,"h":88},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_28.png",
+	"frame": {"x":1882,"y":582,"w":84,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":24,"w":84,"h":86},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_29.png",
+	"frame": {"x":1596,"y":618,"w":88,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":29,"w":88,"h":82},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_30.png",
+	"frame": {"x":1788,"y":702,"w":90,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":35,"w":90,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_31.png",
+	"frame": {"x":1660,"y":938,"w":94,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":41,"w":94,"h":70},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_32.png",
+	"frame": {"x":1660,"y":864,"w":94,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":39,"w":94,"h":72},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_33.png",
+	"frame": {"x":206,"y":1241,"w":96,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":39,"w":96,"h":72},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_34.png",
+	"frame": {"x":1486,"y":1215,"w":98,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":35,"w":98,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_35.png",
+	"frame": {"x":1784,"y":552,"w":96,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":35,"w":96,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_36.png",
+	"frame": {"x":1934,"y":338,"w":94,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":35,"w":94,"h":76},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_37.png",
+	"frame": {"x":1778,"y":780,"w":90,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":33,"w":90,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_38.png",
+	"frame": {"x":1666,"y":1010,"w":88,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":33,"w":88,"h":78},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_39.png",
+	"frame": {"x":1666,"y":1090,"w":84,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":31,"w":84,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_40.png",
+	"frame": {"x":1752,"y":1149,"w":76,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":76,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_41.png",
+	"frame": {"x":1902,"y":1000,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_42.png",
+	"frame": {"x":1830,"y":1082,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_43.png",
+	"frame": {"x":1830,"y":1000,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_44.png",
+	"frame": {"x":1918,"y":918,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_45.png",
+	"frame": {"x":1846,"y":918,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_46.png",
+	"frame": {"x":1774,"y":864,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_47.png",
+	"frame": {"x":1942,"y":836,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_48.png",
+	"frame": {"x":1870,"y":836,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_baby_rock_49.png",
+	"frame": {"x":1902,"y":1082,"w":70,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":31,"w":70,"h":80},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "panda_mom_throw_up_arms.png",
+	"frame": {"x":2,"y":2,"w":954,"h":864},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":100,"w":954,"h":864},
+	"sourceSize": {"w":1024,"h":1024}
+},
+{
+	"filename": "panda_mom_throw_up_arms_01.png",
+	"frame": {"x":1466,"y":450,"w":114,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":100,"w":114,"h":84},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_02.png",
+	"frame": {"x":1692,"y":458,"w":118,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":105,"w":118,"h":78},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_03.png",
+	"frame": {"x":1368,"y":1178,"w":116,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":113,"w":116,"h":78},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_04.png",
+	"frame": {"x":1472,"y":362,"w":108,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":122,"w":108,"h":86},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_05.png",
+	"frame": {"x":1812,"y":460,"w":100,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":128,"w":100,"h":90},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_06.png",
+	"frame": {"x":1026,"y":1113,"w":98,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":127,"w":98,"h":96},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_07.png",
+	"frame": {"x":1914,"y":492,"w":100,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":136,"w":100,"h":88},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_08.png",
+	"frame": {"x":1498,"y":1035,"w":82,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":88,"y":111,"w":82,"h":98},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_09.png",
+	"frame": {"x":1512,"y":1003,"w":112,"h":30},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":52,"w":112,"h":30},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_10.png",
+	"frame": {"x":1696,"y":374,"w":144,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":12,"w":144,"h":82},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_11.png",
+	"frame": {"x":2,"y":1241,"w":202,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":24,"w":202,"h":72},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_12.png",
+	"frame": {"x":1254,"y":428,"w":210,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":41,"w":210,"h":70},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_13.png",
+	"frame": {"x":1131,"y":1207,"w":164,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":93,"w":164,"h":62},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_14.png",
+	"frame": {"x":1582,"y":366,"w":112,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":120,"w":112,"h":76},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_15.png",
+	"frame": {"x":1582,"y":444,"w":108,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":109,"w":108,"h":84},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_arms_16.png",
+	"frame": {"x":1126,"y":1117,"w":110,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":100,"w":110,"h":88},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_01.png",
+	"frame": {"x":1800,"y":146,"w":102,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":28,"w":102,"h":226},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_02.png",
+	"frame": {"x":1072,"y":685,"w":102,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":30,"w":102,"h":224},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_03.png",
+	"frame": {"x":1176,"y":673,"w":102,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":38,"w":102,"h":216},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_04.png",
+	"frame": {"x":1384,"y":673,"w":102,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":46,"w":102,"h":208},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_05.png",
+	"frame": {"x":1030,"y":911,"w":102,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":54,"w":102,"h":200},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_06.png",
+	"frame": {"x":1904,"y":146,"w":102,"h":190},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":64,"w":102,"h":190},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_07.png",
+	"frame": {"x":1238,"y":891,"w":102,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":70,"w":102,"h":184},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_08.png",
+	"frame": {"x":958,"y":685,"w":112,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":47,"w":112,"h":200},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_09.png",
+	"frame": {"x":916,"y":887,"w":112,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":29,"w":112,"h":206},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_10.png",
+	"frame": {"x":1582,"y":146,"w":112,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":11,"w":112,"h":218},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_11.png",
+	"frame": {"x":1468,"y":132,"w":112,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":7,"w":112,"h":228},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_12.png",
+	"frame": {"x":802,"y":868,"w":112,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":17,"w":112,"h":228},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_13.png",
+	"frame": {"x":1134,"y":911,"w":102,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":50,"w":102,"h":204},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_14.png",
+	"frame": {"x":1488,"y":673,"w":102,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":56,"w":102,"h":198},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_15.png",
+	"frame": {"x":1280,"y":673,"w":102,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":46,"w":102,"h":208},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_mom_throw_up_body_16.png",
+	"frame": {"x":1696,"y":146,"w":102,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":28,"w":102,"h":226},
+	"sourceSize": {"w":256,"h":256}
+},
+{
+	"filename": "panda_overlay.png",
+	"frame": {"x":1153,"y":543,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+{
+	"filename": "parachute_001.png",
+	"frame": {"x":1543,"y":536,"w":33,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":54,"w":33,"h":103},
+	"sourceSize": {"w":103,"h":163}
+},
+{
+	"filename": "parachute_002.png",
+	"frame": {"x":1447,"y":883,"w":63,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":26,"w":63,"h":135},
+	"sourceSize": {"w":103,"h":163}
+},
+{
+	"filename": "parachute_003.png",
+	"frame": {"x":1342,"y":883,"w":103,"h":163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":163},
+	"sourceSize": {"w":103,"h":163}
+},
+{
+	"filename": "pm_button.png",
+	"frame": {"x":958,"y":441,"w":294,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":203,"w":294,"h":100},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "pm_frame.png",
+	"frame": {"x":2,"y":868,"w":496,"h":328},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":90,"w":496,"h":328},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "pm_text.png",
+	"frame": {"x":1210,"y":374,"w":260,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":138,"y":226,"w":260,"h":52},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "pp_logo.png",
+	"frame": {"x":958,"y":132,"w":250,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":307},
+	"sourceSize": {"w":250,"h":307}
+},
+{
+	"filename": "sadPanda_1.png",
+	"frame": {"x":932,"y":1095,"w":92,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":114},
+	"sourceSize": {"w":92,"h":114}
+},
+{
+	"filename": "sadPanda_2.png",
+	"frame": {"x":1927,"y":2,"w":92,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":114},
+	"sourceSize": {"w":92,"h":114}
+},
+{
+	"filename": "smokeCloud_1.png",
+	"frame": {"x":958,"y":543,"w":193,"h":140},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":193,"h":140},
+	"sourceSize": {"w":193,"h":142}
+},
+{
+	"filename": "smokeCloud_2.png",
+	"frame": {"x":496,"y":1200,"w":170,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":80},
+	"sourceSize": {"w":170,"h":80}
+},
+{
+	"filename": "star.png",
+	"frame": {"x":1642,"y":981,"w":16,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":17},
+	"sourceSize": {"w":16,"h":17}
+},
+{
+	"filename": "ten.png",
+	"frame": {"x":1990,"y":918,"w":38,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":15,"w":38,"h":32},
+	"sourceSize": {"w":64,"h":64}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "assets.png",
+	"format": "RGBA4444",
+	"size": {"w":2030,"h":1315},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ee51f3187d8ad0cf23120a90a322ad03:e18ba85f418176155f6f47115796d230:a759b6bbc8381ac9c472b28f589ad0d6$"
+}
+}
