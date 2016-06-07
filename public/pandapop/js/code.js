@@ -20626,7 +20626,7 @@ App.Game.prototype = {
                 },
                 500, Phaser.Easing.Sinusoidal.InOut, !0, 0, -1, !0)
             });
-            var nags = [localization.get("You can play this. It's a mini game."), localization.get("Seriously, tap the screen. Try it. It's fun."), localization.get("Tap a matching color"), "", localization.get("Bubbles pop when you match 3 of a color"), localization.get("Pandas sure are cute")],
+            var nags = [localization.get("Play mini game now!"), localization.get("Seriously, tap the screen. Try it. It's fun."), localization.get("Tap a matching color"), "", localization.get("Bubbles pop when you match 3 of a color"), localization.get("Pandas sure are cute")],
             contents = null;
             if (3 == this.nagCount) contents = imageLoader.sprite(frame.x, frame.y, "TutorialMatch3Artwork.png"),
             contents.anchor.set(.5, .5),
