@@ -8776,6 +8776,8 @@ function() {
             return new PIXI.Texture(obj.base)
         },
         resize: function(width, height) {
+            // xiongbo
+            var height = 1280;
             return width === this.width && height === this.height || (this.width = width, this.height = height, this.canvas.width = width, this.canvas.height = height, this._swapCanvas.width = width, this._swapCanvas.height = height, this.baseTexture.width = width, this.baseTexture.height = height, this.textureFrame.width = width, this.textureFrame.height = height, this.texture.width = width, this.texture.height = height, this.texture.crop.width = width, this.texture.crop.height = height, this.update(), this.dirty = !0),
             this
         },
