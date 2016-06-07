@@ -4,6 +4,7 @@ Background:
   # Make sure these conditions are met
   Given The first video is set to pro
   And User "test@techbay.com" has "8" reward
+  And User "test@techbay.com" has not redeemed any videos
   
 Scenario: No embedded video when first landing
   When I am on the homepage

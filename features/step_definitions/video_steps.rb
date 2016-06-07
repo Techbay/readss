@@ -1,11 +1,14 @@
 Given(/^The first video is set to pro$/) do
-  Video.first.update!(:is_pro => true)
+  Video.first.update(:is_pro => true)
 end
 
 Given(/^User "([^"]*)" has "([^"]*)" reward$/) do |email, n|
-  User.find_by_email(email).update!(reward: n.to_i)
+  User.find_by_email(email).update(reward: n.to_i)
 end
 
+Given(/^User "([^"]*)" has( not) redeemed any videos$/) do |email, bool|
+  User.find_by_email(email).videos.delete(Video.all)
+end
 
 When(/^I click the first "([^"]*)" link$/) do |link|
   click_link(link, match: :first)
