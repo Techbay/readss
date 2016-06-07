@@ -32,8 +32,12 @@
 <script>
   $(window).load(function(){
     var change_height = 50;
-    var real_height = $(document).height();
-    var real_height1 = $(document).innerHeight();
+    var real_height = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight;
+    var real_height1 = document.documentElement? document.documentElement.clientHeight : document.body.clientHeight;
+    // var real_height = $(document).height();
+    // var real_height1 = $(document).height();
+    //var real_height = $("canvas").height();
+    //var real_height1 = $("canvas").innerHeight();
     /*alert(real_height);
      */
     });
