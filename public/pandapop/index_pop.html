@@ -7,6 +7,13 @@
 <link rel="stylesheet" type="text/css" href="css/css?family=Muli:300">
 <link href="css/mraid_wrapper.css" rel="stylesheet" />
 
+<style>
+  @viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
+</style>
+
 <script type="text/javascript">
   var ad_name = "pandapop";
   var ad_title = "Panda Pop";
@@ -25,8 +32,8 @@
 <script>
   $(window).load(function(){
     var change_height = 50;
-    var real_height = $("canvas").height();
-    var real_height1 = $("canvas").innerHeight();
+    var real_height = $(document).height();
+    var real_height1 = $(document).innerHeight();
     /*alert(real_height);
      */
     });

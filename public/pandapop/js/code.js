@@ -19666,9 +19666,9 @@ App.Preloader.prototype = {
     },
     preload: function() {
         imageLoader.registerGame(this.game),
-        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_01_BkgV2.jpg", 364, 640),
-        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_02_BkgV2.jpg", 364, 640),
-        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_03_BkgV2.jpg", 364, 640),
+        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_01_BkgV2.jpg", 728, 1280),
+        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_02_BkgV2.jpg", 728, 1280),
+        imageLoader.registerBackgroundImage(ad_webroot + "/img/World_03_BkgV2.jpg", 728, 1280),
         imageLoader.preloadBackground(),
         imageLoader.loadAtlasArray("assets", ad_webroot + "/img/assets.png", ad_webroot + "/js/assets.json")
     },
@@ -20765,8 +20765,8 @@ App.Game.prototype = {
     }
 };
 var ad_state = null;
-gameWidth = 364,
-gameHeight = 640,
+gameWidth = 728,
+gameHeight = 1280,
 console.log("orientation: " + ad_orientation),
 "landscape" == ad_orientation && (gameWidth = 1280, gameHeight = 728);
 var game = new Phaser.Game(gameWidth, gameHeight, Phaser.CANVAS, "");
