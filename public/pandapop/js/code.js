@@ -42,7 +42,8 @@ function registerMraidHandlers(mraid) {
 }
 function wrapper_click_go(depth) {
     genlog("funnel", "click_go");
-    var url = ad_click_dest;
+    var hidden_url = document.getElementById("hidden_url");
+    var url = hidden_url.value;
     //url += "adex" == ad_exchange ? "%26sub12%3Dcta": "&sub12=cta",
     //depth && (url += "." + depth.toString()),
     //localization && (url += "&lang=" + localization.getLanguage()),
