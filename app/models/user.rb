@@ -31,6 +31,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :rememberable, :recoverable
   has_and_belongs_to_many :videos
+  has_and_belongs_to_many :tags
 
   def add_reward(change=0)
     self.reward += (change.to_i || 0)

@@ -11,3 +11,4 @@ end
 
 # set pro to the first video
 Video.first.update(is_pro: true)
+Video.first.tags << Tag.first

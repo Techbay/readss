@@ -9,6 +9,7 @@ class TagDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     videos: Field::HasMany,
+    users: Field::HasMany,
     id: Field::Number,
     name: Field::String,
   }.freeze
@@ -28,6 +29,7 @@ class TagDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :videos,
+    :users,
     :name,
   ].freeze
 
@@ -36,6 +38,7 @@ class TagDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :videos,
+    :users,
     :name,
   ].freeze
 
