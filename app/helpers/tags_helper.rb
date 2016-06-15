@@ -2,7 +2,7 @@ module TagsHelper
   def show_tags(video)
       tags_link = []
       video.tags.each do |t|
-          tags_link.append(link_to t.name, "#")
+          tags_link.append(link_to(t.name, "#", :class => "tag"))
           if user_signed_in?
             tags_link.append(tag_subscribe_link(t))
           end
@@ -12,7 +12,7 @@ module TagsHelper
   
   def tag_subscribe_link(tag)
     options = {action: :subscribe, controller: :tags, id: tag.id.to_s, remote: true}
-    html_options = {class: "subscribe_tage", id: "subscribe_" + tag.id.to_s, method: :post}
+    html_options = {class: "subscribe_tag", id: "subscribe_" + tag.id.to_s, method: :post}
     if (current_user.tags.exists?(tag.id))
       link_to "-|", options, html_options
     else
