@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     resources :videos
     post 'video_redeem', to: 'videos#redeem'
     get 'user_id', to: 'application#user_id'
+    get 'tag', to: 'videos#index'
     post 'tag_subscribe', to: 'tags#subscribe'
 
   end

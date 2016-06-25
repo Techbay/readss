@@ -2,7 +2,7 @@ module TagsHelper
   def show_tags(video)
       tags_link = []
       video.tags.each do |t|
-          tags_link.append(link_to(t.name, "#", :class => "tag"))
+          tags_link.append(link_to(t.name, tag_path(:tag_id=>t.id.to_s), :class => "tag"))
           if user_signed_in?
             tags_link.append(tag_subscribe_link(t))
           end

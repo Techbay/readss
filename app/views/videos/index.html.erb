@@ -1,4 +1,8 @@
 <h1 class="text-center"><%= t('.Videos', default:'All Videos') %></h1>
+<% if @tag_id %>
+<h2 class="text-center">from</h2>
+<h2 class="text-center"><%= Tag.find(@tag_id).name %></h2>
+<% end %>
 <div class="videos">
   <% @videos.each do |video| %>
     <div class="media video-<%= video.id %> video">

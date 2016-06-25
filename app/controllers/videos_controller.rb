@@ -7,10 +7,16 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
+    if params[:tag_id]
+      v = Tag.find(params[:tag_id]).videos
+      @tag_id = params[:tag_id]
+    else
+      v = Video
+    end 
     if I18n.locale.to_s == "en"
-      @videos = Video.video_by_type("Youtube")
+      @videos = v.video_by_type("Youtube")
     elsif I18n.locale.to_s == "zh-CN"
-      @videos = Video.video_by_type("Youku")
+      @videos = v.video_by_type("Youku")
     end
   end
 
